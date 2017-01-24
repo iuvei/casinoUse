@@ -1,0 +1,105 @@
+// Clearfix
+//
+// For modern browsers
+// 1. The space content is one way to avoid an Opera bug when the
+//    contenteditable attribute is included anywhere else in the document.
+//    Otherwise it causes space to appear at the top and bottom of elements
+//    that are clearfixed.
+// 2. The use of `table` rather than `block` is only necessary if using
+//    `:before` to contain the top-margins of child elements.
+//
+// Source: http://nicolasgallagher.com/micro-clearfix-hack/
+@mixin clearfix() {
+    &:after,
+    &:before {
+        content: " "; // 1
+        display: table; // 2
+    }
+
+    &:after {
+        clear: both;
+    }
+}
+// Transition
+@mixin transition($transition...) {
+    -webkit-transition: $transition;
+    -o-transition: $transition;
+    transition: $transition;
+}
+
+// Transform
+@mixin transform($transform...) {
+  -webkit-transform: $transform;
+  -o-transform: $transform;
+  -moz-transform: $transform;
+}
+// Horizontal centering
+@mixin center-block() {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+//Link Hover
+@mixin link() {
+    &:link,
+    &:visited {
+        @content;
+    }
+};
+@mixin link-hover() {
+    &.active,
+    &:active,
+    &:focus,
+    &:hover {
+        @content;
+    }
+}
+// Pointer none
+@mixin pointer-none {
+    -moz-pointer-events: none;
+    -webkit-pointer-events: none;
+    -o-pointer-events: none;
+    -ms-pointer-events: none;
+    pointer-events: none;
+}
+// Overflow Scroll
+@mixin overflow-scroll {
+    overflow-y: auto;
+    overflow-scrolling: touch;
+    -webkit-overflow-scrolling: touch;
+}
+//size
+@mixin size($width, $height) {
+    width: $width;
+    height: $height;
+}
+@mixin sq-size($size) {
+     @include size($size, $size);
+}
+// Text truncate
+// Requires inline-block or block for proper styling
+@mixin text-truncate() {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+// font-awesome
+@mixin fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// CSS image replacement
+@mixin text-hide() {
+    font: "0/0" a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0;
+}

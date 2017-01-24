@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html class="game game-mg">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <title>BBIN</title>
+  <!-- <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon" />
+  -->
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
+
+  <!--[if lt IE 9]>
+  <script src="js/html5shiv.js"></script>
+  <script src="js/respond.js"></script>
+  <![endif]-->
+  <script src="js/modernizr.custom.js"></script>
+
+</head>
+<body  ontouchstart="">
+  <div id="mainBody" class="wrap game">
+
+    <!-- HEADER -->
+    <div id="page-header" class="header">
+      <div class="header-c">
+        <div class="header-login">
+          <a id="login" class="icon icon-member" data-type="inline" href="#login-wrap"></a>
+          <span></span>
+        </div>
+        <div class="header-logo">
+          <a href="index.html" class="logo-img">
+            <img src="image/logo_bbin.png" />
+          </a>
+        </div>
+        <div class="header-nav">
+          <a href="#" id="menu" class="icon icon-nav"></a>
+        </div>
+        <div class="header-menu">
+          <ul class="menu">
+            <li><a href="index.html">首页</a></li>
+            <li class="drop">
+              <a href="#">体育赛事<i class="icon icon-arrow-down"></i></a>
+              <ul class="menu-sec">
+                <li class="first-child"><a href="sport-bb.html">BB体育</a></li>
+                <li><a href="#0">体育投注</a></li>
+                <li class="last-child"><a href="#0">SB体育</a></li>
+              </ul>
+            </li>
+            <li><a href="livecasino.html">视讯直播</a></li>
+            <li class="drop">
+              <a href="#">电子游艺<i class="icon icon-arrow-down"></i></a>
+              <ul class="menu-sec">
+                <li class="first-child"><a href="casino-bbin.html">BB电子</a></li>
+                <li><a href="casino-mg.html">MG电子</a></li>
+                <li class="last-child"><a href="#0">GNS电子</a></li>
+              </ul>
+            </li>
+            <li><a href="lottery.html">彩票游戏</a></li>
+            <li><a href="promotions.html" class="active">优惠活动</a></li>
+          </ul>
+        </div>
+        <div class="header-lang">
+          <a id="lang" class="lang icon-cn" data-type="ajax" href="lang.html"></a>
+          <span></span>
+        </div>
+      </div>
+      <div class="container-function">
+        <div class="container-membar removeTextNodes">
+          <div class="input-ac">
+            <input type="text" placeholder="帐号">
+          </div>
+          <div class="input-pw">
+            <input type="text" placeholder="密码">
+          </div>
+          <div class="input-code">
+            <input type="text" placeholder="验证码">
+            <figure>
+              <img src="image/not-use/code.png">
+            </figure>
+          </div>
+          <div class="link removeTextNodes">
+            <a class="btn-login" href="index-login.html">登入</a>
+            <a class="btn-joinus" href="#0">注冊</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONTAINER -->
+    <div id="page-container" class="container">
+      <div id="page-body">
+
+        <div id="game" class="game-wrap">
+
+          <!--SLIDER START-->
+          <div class="game-slider">
+            <div id="game-slider" class="game-slider-wrap">
+              <ul class="slider">
+                <!-- <li><img src="image/game/ad01_m.png" alt="" /></li>
+                <li><img src="image/game/ad01_m.png" alt="" /></li> -->
+              </ul>
+            </div>
+          </div>
+          <!--SLIDER END-->
+
+          <!-- NAV START -->
+          <div id="game-nav" class="game-nav">
+            <div class="game-nav-current"></div>
+            <i class="fa fa-angle-down"></i>
+            <ul class="game-nav-list clearfix">
+              <li class="nav-bb"><a href="casino-bbin.html"><span>BB电子</span></a></li >
+              <li class="nav-mg active"><a href="#0"><span>MG电子</span></a></li>
+              <li class="nav-gns"><a href="#0"><span>GNS电子</span></a></li>
+              <li class="nav-isb"><a href="#0"><span>ISB电子</span></a></li>
+              <li class="nav-habanero"><a href="#0"><span>Habanero电子</span></a></li>
+              <li class="nav-habanero"><a href="#0"><span>Habanero电子</span></a></li>
+              <!-- <li class="nav-habanero"><a href="#0"><span>Habanero电子</span></a></li>
+              <li class="nav-habanero"><a href="#0"><span>Habanero电子</span></a></li>
+              <li class="nav-habanero"><a href="#0"><span>Habanero电子</span></a></li>
+              <li class="nav-habanero"><a href="#0"><span>Habanero电子</span></a></li>
+              <li class="nav-habanero"><a href="#0"><span>Habanero电子</span></a></li>
+              <li class="nav-habanero"><a href="#0"><span>Habanero电子</span></a></li> -->
+            </ul>
+          </div>
+          <!-- NAV END -->
+
+          <!--MENU START-->
+          <div id="game-menu" class="game-menu clearfix">
+
+            <div class="game-menu-show">
+              <a href="#0" class="show-menu"></a>
+            </div>
+              <div class="game-menu-wrap">
+              <div class="game-menu-nav clearfix">
+                <div class="game-menu-icon-box">
+                  <div class="game-menu-current"></div>
+                  <i class="fa fa-angle-down"></i>
+                  <ul class="game-menu-icon">
+                    <li data-id="0" class="game-icon1 game-fav "><a href="#0" class="filter" data-filter=".category-0"><span>我的最愛</span></a></li>
+                    <li data-id="1" class="game-icon2 active"><a href="#0" class="filter" data-filter=".category-1"><span>热门游戏</span></a></li>
+                    <!-- <li data-id="2" class="game-icon3"><a href="#0" class="filter" data-filter=".category-2"><span>本月推荐</span></a></li> -->
+                    <li data-id="3" class="game-icon4"><a href="#0" class="filter" data-filter=".category-3"><span>最新游戏</span></a></li>
+                    <li data-id="4" class="game-icon5"><a href="#0" class="filter" data-filter=".category-4"><span>累积彩池</span></a></li>
+                    <li data-id="6" class="game-icon12"><a href="#0" class="filter" data-filter=".category-6"><span>老虎机</span></a></li>
+                    <li data-id="5" class="game-icon6"><a href="#0" class="filter" data-filter=".category-5"><span>特色游戏</span></a></li>
+                    <li data-id="7" class="game-icon7"><a href="#0" class="filter" data-filter=".category-7"><span>桌上游戏</span></a></li>
+                    <!-- <li data-id="8" class="game-icon8"><a href="#0" class="filter" data-filter=".category-8"><span>大型机台</span></a></li> -->
+                    <!-- <li data-id="9" class="game-icon9"><a href="#0" class="filter" data-filter=".category-9"><span>刮刮乐</span></a></li> -->
+                    <li data-id="99" class="game-icon13"><a href="#0" class="filter" data-filter="all"><span>全部</span></a></li>
+                    <!-- <li data-id="10" class="game-icon11"><a href="#0" class="filter" data-filter=".category-10"><span>捕鱼机</span></a></li> -->
+                  </ul>
+                </div>
+
+                <div class="game-menu-list">
+                  <ul>
+                    <li><a href="#0">
+                      <span>5线以下</span><span class="list-num fa">4</span>
+                    </a></li>
+                    <li><a href="#0">
+                      <span>8线</span><span class="list-num fa">12</span>
+                    </a></li>
+                    <li><a href="#0">
+                      <span>9线</span><span class="list-num fa">4</span>
+                    </a></li>
+                    <li><a href="#0">
+                      <span>20线</span><span class="list-num fa">4</span>
+                    </a></li>
+                    <li><a href="#0">
+                      <span>25线</span><span class="list-num fa">4</span>
+                    </a></li>
+                    <li><a href="#0">
+                      <span>40线</span><span class="list-num fa">4</span>
+                    </a></li>
+                    <li><a href="#0">
+                      <span>其他线</span><span class="list-num fa">4</span>
+                    </a></li>
+                    <li><a href="#0">
+                      <span>经典老虎机</span><span class="list-num fa">4</span>
+                    </a></li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+
+            <div id="game-menu-filter" class="game-menu-filter clearfix">
+              <h2 class="game-filter-title">电子游艺</h2>
+              <span>&gt;&gt;</span>
+              <a href="#0" class="filter all" data-filter="all">
+                <span>全部</span>
+                <span>(<b class="game-filter-num">115</b>)</span>
+              </a>
+
+              <div class="game-filter-sort">
+                <span>&gt;</span>
+                <a href="#0" id="js-filter-current" class="game-filter-current filter" data-filter="all">
+                  <span>热门游戏</span>
+                </a>
+                <span>(<b class="game-filter-num">40</b>)</span>
+                <ul class="game-filter-option">
+                  <li data-id="0" title="我的最爱" class="game-fav filter" data-filter=".category-0">
+                    <span class="game-filter-list">我的最爱</span>
+                  </li>
+                  <li data-id="1" title="热门游戏" class="filter" data-filter=".category-1">
+                    <span class="game-filter-list">热门游戏</span>
+                  </li>
+                  <!-- <li data-id="2" title="本月推荐" class="filter" data-filter=".category-2">
+                    <span class="game-filter-list">本月推荐</span>
+                  </li> -->
+                  <li data-id="3" title="最新游戏" class="filter category-1" data-filter=".category-3">
+                    <span class="game-filter-list">最新游戏</span>
+                  </li>
+                  <li data-id="4" title="累积彩池" class="filter" data-filter=".category-4">
+                    <span class="game-filter-list">累积彩池</span>
+                  </li>
+                  <li data-id="5"title="特色游戏" class="filter" data-filter=".category-5">
+                    <span class="game-filter-list">特色游戏</span>
+                  </li>
+                  <li data-id="6" title="老虎机" class="filter" data-filter=".category-6">
+                    <span class="game-filter-list">老虎机</span>
+                  </li>
+                  <li data-id="7" title="桌上游戏" class="filter" data-filter=".category-7">
+                    <span class="game-filter-list">桌上游戏</span>
+                  </li>
+                  <!-- <li data-id="8" title="大型机台" class="filter" data-filter=".category-8">
+                    <span class="game-filter-list">大型机台</span>
+                  </li>
+                  <li data-id="9" title="刮刮乐" class="filter" data-filter=".category-9">
+                    <span class="game-filter-list">刮刮乐</span>
+                  </li>
+                  <li data-id="10" title="捕鱼机" class="filter" data-filter=".category-10">
+                    <span class="game-filter-list">捕鱼机</span>
+                  </li> -->
+                </ul>
+              </div>
+
+            </div>
+
+            <ul id="game-view" class="game-box-view">
+              <li class="view-grid"><a href="#0" class="active"><i class="fa fa-th"></i></a></li>
+              <li class="view-list"><a href="#0"><i class="fa fa-align-justify"></i></a></li>
+            </ul>
+
+            <div id="game-search" class="game-search">
+
+                <button type="submit" class="game-btn-search"><i class="fa fa-search fa-15x"></i></button>
+                <form action="" class="game-search-box">
+                  <input type="text" class="game-search-input" placeholder="请输入游戏名称"  name="search" data-ic-class="search-input" v-model="name">
+                  <span class="fa fa-times-circle" data-ic-class="search-clear"></span>
+                  <button class="btn-cancle" type="cancle" name="cancle"><span>取消</span></button>
+                </form>
+
+
+            </div>
+
+          </div>
+          <!--MENU END-->
+
+        <div id="game-layout" class="game-layout mg-layout clearfix grid">
+
+            <template  id="mggameList" v-for="(mggame, index) in filteredMG">
+              <div class="game-layout-box game-box game-box-hide" v-bind:data-layout-id="[index]" v-bind:data-filter="[mggame.category]">
+                <div class="game-layout-top">
+                  <div class="game-layout-list-over">
+                    <div class="game-layout-list">
+                      <div class="game-layout-img">
+                        <img :src="mggame.url">
+
+                        <template v-if="mggame.jackpot">
+                          <div class="game-layout-minor open">
+                            <div class="minor-title"></div>
+                            <span>{{ mggame.jackpot }}</span>
+                          </div>
+                        </template>
+                      </div>
+
+                      <div class="game-list-content clearfix">
+                        <h3>{{ mggame.name }}</h3>
+                        <i class="game-list-fav fa fa-star fa-lg"></i>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="game-layout-mask">
+                    <a class="game-btn-enter" href="#0">进入游戏</a>
+                    <template v-if="mggame.free">
+                      <a class="game-btn-free" href="#0">免费试玩</a>
+                    </template>
+                    <div class="game-btn-box">
+                      <template v-if="game.flash">
+                        <i class="btn-icon-flash"></i>
+                        <i class="btn-icon-direction"></i>
+                      </template>
+                      <i class="btn-icon-fav"></i>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="game-list-title-wrap">
+                  <i class="game-list-title-fav fa fa-star"></i>
+                  <i class="game-list-title game-list-mg"></i>
+                </div>
+                <div class="game-list-box">
+                  <h3 class="game-layout-name">{{ mggame.name }}</h3>
+                </div>
+              </div>
+            </template>
+
+          </div>
+
+          <div id="game-jp" class="game-jp mg-jp">
+            <div class="gamejp-wrap">
+              <div class="gamejp-content">
+                <div class="gamejp-title"></div>
+
+                <div class="gamejp-num-slide">
+                  <div class="gamejp-num-slide-content clearfix">
+                    <div class="gamejp-num-wrap">
+                      <div class="gamejp-num-title">
+                        <img src="image/game/jp-mg/gamejp_mg_23752.png" alt="">
+                        <span>现金飞溅(5线)</span>
+                      </div>
+                      <div class="gamejp-num-content">
+                        <div class="gamejp-num" data-n="0"><span>0</span></div>
+                        <div class="gamejp-num" data-n="9"><span>9</span></div>
+                        <div class="gamejp-unit gamejp-comma"><span>,</span></div>
+                        <div class="gamejp-num" data-n="8"><span>8</span></div>
+                        <div class="gamejp-num" data-n="7"><span>7</span></div>
+                        <div class="gamejp-num" data-n="6"><span>6</span></div>
+                        <div class="gamejp-unit gamejp-comma"><span>,</span></div>
+                        <div class="gamejp-num" data-n="5"><span>5</span></div>
+                        <div class="gamejp-num" data-n="4"><span>4</span></div>
+                        <div class="gamejp-num" data-n="3"><span>3</span></div>
+                        <div class="gamejp-unit gamejp-dot"><span>.</span></div>
+                        <div class="gamejp-num" data-n="2"><span>2</span></div>
+                        <div class="gamejp-num" data-n="1"><span>1</span></div>
+                      </div>
+                    </div>
+                    <div class="gamejp-num-wrap">
+                      <div class="gamejp-num-title">
+                        <img src="image/game/jp-mg/gamejp_mg_23754.png" alt="">
+                        <span>水果嘉年华(3线)</span>
+                      </div>
+                      <div class="gamejp-num-content">
+                        <div class="gamejp-num" data-n="0"><span>0</span></div>
+                        <div class="gamejp-num" data-n="9"><span>9</span></div>
+                        <div class="gamejp-unit gamejp-comma"><span>,</span></div>
+                        <div class="gamejp-num" data-n="8"><span>8</span></div>
+                        <div class="gamejp-num" data-n="7"><span>7</span></div>
+                        <div class="gamejp-num" data-n="6"><span>6</span></div>
+                        <div class="gamejp-unit gamejp-comma"><span>,</span></div>
+                        <div class="gamejp-num" data-n="5"><span>5</span></div>
+                        <div class="gamejp-num" data-n="4"><span>4</span></div>
+                        <div class="gamejp-num" data-n="3"><span>3</span></div>
+                        <div class="gamejp-unit gamejp-dot"><span>.</span></div>
+                        <div class="gamejp-num" data-n="2"><span>2</span></div>
+                        <div class="gamejp-num" data-n="1"><span>1</span></div>
+                      </div>
+                    </div>
+                    <div class="gamejp-num-wrap">
+                      <div class="gamejp-num-title">
+                        <img src="image/game/jp-mg/gamejp_mg_23760.png" alt="">
+                        <span>百萬富翁</span>
+                      </div>
+                      <div class="gamejp-num-content">
+                        <div class="gamejp-num" data-n="0"><span>0</span></div>
+                        <div class="gamejp-num" data-n="9"><span>9</span></div>
+                        <div class="gamejp-unit gamejp-comma"><span>,</span></div>
+                        <div class="gamejp-num" data-n="8"><span>8</span></div>
+                        <div class="gamejp-num" data-n="7"><span>7</span></div>
+                        <div class="gamejp-num" data-n="6"><span>6</span></div>
+                        <div class="gamejp-unit gamejp-comma"><span>,</span></div>
+                        <div class="gamejp-num" data-n="5"><span>5</span></div>
+                        <div class="gamejp-num" data-n="4"><span>4</span></div>
+                        <div class="gamejp-num" data-n="3"><span>3</span></div>
+                        <div class="gamejp-unit gamejp-dot"><span>.</span></div>
+                        <div class="gamejp-num" data-n="2"><span>2</span></div>
+                        <div class="gamejp-num" data-n="1"><span>1</span></div>
+                      </div>
+                    </div>
+                    <div class="gamejp-num-wrap">
+                      <div class="gamejp-num-title">
+                        <img src="image/game/jp-mg/gamejp_mg_23764.png" alt="">
+                        <span>驚爆獎金</span>
+                      </div>
+                      <div class="gamejp-num-content">
+                        <div class="gamejp-num" data-n="0"><span>0</span></div>
+                        <div class="gamejp-num" data-n="9"><span>9</span></div>
+                        <div class="gamejp-unit gamejp-comma"><span>,</span></div>
+                        <div class="gamejp-num" data-n="8"><span>8</span></div>
+                        <div class="gamejp-num" data-n="7"><span>7</span></div>
+                        <div class="gamejp-num" data-n="6"><span>6</span></div>
+                        <div class="gamejp-unit gamejp-comma"><span>,</span></div>
+                        <div class="gamejp-num" data-n="5"><span>5</span></div>
+                        <div class="gamejp-num" data-n="4"><span>4</span></div>
+                        <div class="gamejp-num" data-n="3"><span>3</span></div>
+                        <div class="gamejp-unit gamejp-dot"><span>.</span></div>
+                        <div class="gamejp-num" data-n="2"><span>2</span></div>
+                        <div class="gamejp-num" data-n="1"><span>1</span></div>
+                      </div>
+                    </div>
+                    <div class="gamejp-num-wrap">
+                      <div class="gamejp-num-title">
+                        <img src="image/game/jp-mg/gamejp_mg_23758.png" alt="">
+                        <span>現金累積(3線)</span>
+                      </div>
+                      <div class="gamejp-num-content">
+                        <div class="gamejp-num" data-n="0"><span>0</span></div>
+                        <div class="gamejp-num" data-n="9"><span>9</span></div>
+                        <div class="gamejp-unit gamejp-comma"><span>,</span></div>
+                        <div class="gamejp-num" data-n="8"><span>8</span></div>
+                        <div class="gamejp-num" data-n="7"><span>7</span></div>
+                        <div class="gamejp-num" data-n="6"><span>6</span></div>
+                        <div class="gamejp-unit gamejp-comma"><span>,</span></div>
+                        <div class="gamejp-num" data-n="5"><span>5</span></div>
+                        <div class="gamejp-num" data-n="4"><span>4</span></div>
+                        <div class="gamejp-num" data-n="3"><span>3</span></div>
+                        <div class="gamejp-unit gamejp-dot"><span>.</span></div>
+                        <div class="gamejp-num" data-n="2"><span>2</span></div>
+                        <div class="gamejp-num" data-n="1"><span>1</span></div>
+                      </div>
+                    </div>
+                    <div class="gamejp-num-wrap">
+                      <div class="gamejp-num-title">
+                        <img src="image/game/jp-mg/gamejp_mg_23763.png" alt="">
+                        <span>圖拉姆尼</span>
+                      </div>
+                      <div class="gamejp-num-content">
+                        <div class="gamejp-num" data-n="0"><span>0</span></div>
+                        <div class="gamejp-num" data-n="9"><span>9</span></div>
+                        <div class="gamejp-unit gamejp-comma"><span>,</span></div>
+                        <div class="gamejp-num" data-n="8"><span>8</span></div>
+                        <div class="gamejp-num" data-n="7"><span>7</span></div>
+                        <div class="gamejp-num" data-n="6"><span>6</span></div>
+                        <div class="gamejp-unit gamejp-comma"><span>,</span></div>
+                        <div class="gamejp-num" data-n="5"><span>5</span></div>
+                        <div class="gamejp-num" data-n="4"><span>4</span></div>
+                        <div class="gamejp-num" data-n="3"><span>3</span></div>
+                        <div class="gamejp-unit gamejp-dot"><span>.</span></div>
+                        <div class="gamejp-num" data-n="2"><span>2</span></div>
+                        <div class="gamejp-num" data-n="1"><span>1</span></div>
+                      </div>
+                    </div>
+                    <div class="gamejp-num-wrap">
+                      <div class="gamejp-num-title">
+                        <img src="image/game/jp-mg/gamejp_mg_23757.png" alt="">
+                        <span>富裕的國王</span>
+                      </div>
+                      <div class="gamejp-num-content">
+                        <div class="gamejp-num" data-n="0"><span>0</span></div>
+                        <div class="gamejp-num" data-n="9"><span>9</span></div>
+                        <div class="gamejp-unit gamejp-comma"><span>,</span></div>
+                        <div class="gamejp-num" data-n="8"><span>8</span></div>
+                        <div class="gamejp-num" data-n="7"><span>7</span></div>
+                        <div class="gamejp-num" data-n="6"><span>6</span></div>
+                        <div class="gamejp-unit gamejp-comma"><span>,</span></div>
+                        <div class="gamejp-num" data-n="5"><span>5</span></div>
+                        <div class="gamejp-num" data-n="4"><span>4</span></div>
+                        <div class="gamejp-num" data-n="3"><span>3</span></div>
+                        <div class="gamejp-unit gamejp-dot"><span>.</span></div>
+                        <div class="gamejp-num" data-n="2"><span>2</span></div>
+                        <div class="gamejp-num" data-n="1"><span>1</span></div>
+                      </div>
+                    </div>
+                    <div class="gamejp-num-wrap">
+                      <div class="gamejp-num-title">
+                        <img src="image/game/jp-mg/gamejp_mg_23762.png" alt="">
+                        <span>尼羅河寶藏</span>
+                      </div>
+                      <div class="gamejp-num-content">
+                        <div class="gamejp-num" data-n="0"><span>0</span></div>
+                        <div class="gamejp-num" data-n="9"><span>9</span></div>
+                        <div class="gamejp-unit gamejp-comma"><span>,</span></div>
+                        <div class="gamejp-num" data-n="8"><span>8</span></div>
+                        <div class="gamejp-num" data-n="7"><span>7</span></div>
+                        <div class="gamejp-num" data-n="6"><span>6</span></div>
+                        <div class="gamejp-unit gamejp-comma"><span>,</span></div>
+                        <div class="gamejp-num" data-n="5"><span>5</span></div>
+                        <div class="gamejp-num" data-n="4"><span>4</span></div>
+                        <div class="gamejp-num" data-n="3"><span>3</span></div>
+                        <div class="gamejp-unit gamejp-dot"><span>.</span></div>
+                        <div class="gamejp-num" data-n="2"><span>2</span></div>
+                        <div class="gamejp-num" data-n="1"><span>1</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+                <ul class="gamejp-imm-wrap">
+                  <li class="gamejp-imm gamejp-imm-grand">
+                    <span class="gamejp-imm-game">糖果派对</span>
+                    <span class="gamejp-imm-name">jin***</span>
+                    <span class="gamejp-imm-score">¥ 495.29</span>
+                  </li>
+                  <li class="gamejp-imm gamejp-imm-major">
+                    <span class="gamejp-imm-game">糖果派对</span>
+                    <span class="gamejp-imm-name">jin***</span>
+                    <span class="gamejp-imm-score">¥ 495.29</span>
+                  </li>
+                  <li class="gamejp-imm gamejp-imm-minor">
+                    <span class="gamejp-imm-game">糖果派对</span>
+                    <span class="gamejp-imm-name">jin***</span>
+                    <span class="gamejp-imm-score">¥ 495.29</span>
+                  </li>
+                  <li class="gamejp-imm gamejp-imm-mini">
+                    <span class="gamejp-imm-game">糖果派对</span>
+                    <span class="gamejp-imm-name">jin***</span>
+                    <span class="gamejp-imm-score">¥ 495.29</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+    <!-- FOORTER -->
+    <div id="page-footer" class="footer">
+      <div class="footer-c">
+        <div class="footer-links">
+          <div class="links-box">
+            <div class="ttl">相关连结</div>
+            <a href="#0">关于BBIN</a>
+            <a href="#0">BBIN技术</a>
+            <a href="#0">协议与规则</a>
+            <a href="#0">合作伙伴</a>
+            <a href="#0">寰宇浏览器</a>
+          </div>
+          <div class="links-box">
+            <div class="ttl">需要帮助吗？</div>
+            <a href="contact.html">联络我们</a>
+            <a href="#0">常见问题</a>
+            <a href="#0">存/取款帮助</a>
+            <a href="#0">下载区</a>
+            <a href="#0">诺顿分级-安全网站</a>
+          </div>
+        </div>
+        <div class="footer-pay">
+          <ul>
+            <li>
+              <a href="#0">
+                <figure>
+                  <img src="image/footer_logo_weixin.png">
+                  <figcaption>微信支付</figcaption>
+                </figure>
+              </a>
+            </li>
+            <li>
+              <a href="#0">
+                <figure>
+                  <img src="image/footer_logo_alipay.png">
+                  <figcaption>支付宝</figcaption>
+                </figure>
+              </a>
+            </li>
+            <li>
+              <a href="#0">
+                <figure>
+                  <img src="image/footer_logo_mobile.png">
+                  <figcaption>手机支付</figcaption>
+                </figure>
+              </a>
+            </li>
+            <li>
+              <a href="#0">
+                <figure>
+                  <img src="image/footer_logo_neteller.png">
+                  <figcaption>NETELLER</figcaption>
+                </figure>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-line"></div>
+      <div class="footer-infor">
+        <div class="footer-copyright">
+          <p class="copyright">
+            2016 Copyright ©
+            <a href="">BBIN</a>
+            Reserved.
+          </p>
+          <p class="warn">如遇网页无法显示或出现错误，推荐其用户微软升级至IE10以上版本或下载其他浏览器享受更好的浏览品质。</p>
+        </div>
+        <div class="footer-glc">
+          <img src="image/logo_glc.png">
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- 滑動按鈕 -->
+  <!-- <div class="float-btn-arrow">
+    <div class="float-btn-down"></div>
+    <div class="float-btn-top"></div>
+  </div> -->
+
+
+  <!--會員登入視窗-->
+  <div id="login-wrap" style="display:none;">
+    <div class="login-wrap">
+        <div class="login-main">
+        <ul>
+          <li><input type="text" placeholder="帐号"></li>
+          <li><input type="text" placeholder="密码"></li>
+          <li>
+            <input type="text" placeholder="验证码">
+            <figure><img src="image/not-use/code2.png"></figure>
+          </li>
+        </ul>
+        <a href="#0" class="login-forget">忘记密码？</a>
+        <div class="login-button">
+          <button class="login" onclick="location.href='index-login.html'">登入</button>
+          <button class="register">注册</button>
+        </div>
+        </div>
+      </div>
+  </div>
+
+  <!--几率登入視窗-->
+  <div id="login_window" class="dialog">
+      <div class="dialog-overlay"></div>
+      <div class="dialog-content">
+          <div class="login-wrap-small">
+              <div class="lws-bg game"></div>
+              <div class="lws-content">
+                <h2>会员登入</h2>
+                <div class="lws-input ico-acc">
+                  <input type="text" placeholder="帐号">
+                </div>
+                <div class="lws-input ico-pw">
+                  <input type="password" placeholder="密码">
+                </div>
+                <div class="lws-input ico-code">
+                  <input type="text" placeholder="●●●●">
+                  <figure><img src="image/not-use/code3.png"></figure>
+                </div>
+                <button class="login" onclick="game.href='casino.html'">登入</button>
+                <div class="lws-forget">
+            <a href="#0">忘记密码 ?</a>
+                </div>
+                <button class="signup">+ 加入会员</button>
+              </div>
+              <div class="lws-close" data-dialog-close>x</div>
+          </div>
+
+      </div>
+  </div>
+
+  <!--彩金視窗-->
+  <div id="jp-rule" class="jackpot_rule_window">
+      <div class="jackpot_rule-overlay"></div>
+      <div class="jackpot_rule-content-wrap">
+        <div class="jackpot_rule-content">
+          <p>
+            游戏提供四层神秘彩金(3D GRAND-BBIN连线超级彩金、3D MAJOR-争霸彩金、3D MINOR-双龙彩金、3D MINI-独赢彩金)，不定时送出高额大奖。其中3D MINI-独赢彩金以1:1派发，其余3D GRAND-BBIN连线超级彩金、3D MAJOR-争霸彩金、3D MINOR-双龙彩金则由系统随机决定比例派发。 彩金金额统一以人民币显示，派发时将依照玩家所属币别自动做换算。
+          </p>
+        </div>
+        <a class="jackpot_rule_close" href="#0"></a>
+      </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/jquery-2.2.3.js"><\/script>')</script>
+  <script src="js/nicescroll.js"></script>
+	<script src="js/mob-menu.js"></script>
+	<script src="js/venobox.js"></script>
+	<!-- <script src='js/jquery.mixitup.js'></script> -->
+	<script src="js/main.js"></script>
+  <script src="js/casino-slider.js"></script>
+
+  <script src="js/casinojs.js"></script>
+  <!-- <script src="js/vue.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.8/vue.min.js"></script>
+  <script src="js/casino-vue.js"></script>
+</body>
+</html>

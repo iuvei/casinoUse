@@ -1,0 +1,68 @@
+$dpi-1920:  1920px;      //1920px
+$dpi-1600:  1600px;      //1600px
+$dpi-1200:  1200px;      //1200px
+$dpi-1024:  1024px;      //1024px
+$dpi-992:   992px;       //992px
+$dpi-960:   960px;       //960px
+$dpi-768:   768px;       //768px
+$dpi-640:   604px;       //640px
+$dpi-568:   568px;       //568px
+$dpi-480:   480px;       //480px
+$dpi-414:   414px;       //414px
+$dpi-320:   320px;       //320px
+$dpi-240:   240px;       //240px
+
+// media queries
+@mixin MQ($canvas) {
+      @if $canvas == dpi-1920 {
+            @media only screen and (max-width: $dpi-1920) { @content; }
+      }
+      @else if $canvas == dpi-1600 {
+            @media only screen and (max-width: $dpi-1600) { @content; }
+      }
+      @else if $canvas == dpi-1200 {
+            @media only screen and (max-width: $dpi-1200) { @content; }
+      }
+      @else if $canvas == dpi-1024 {
+            @media only screen and (max-width: $dpi-1024) { @content; }
+      }
+      @else if $canvas == tablet {
+            @media only screen and (max-width: $dpi-1024) { @content; }
+      }
+      @else if $canvas == dpi-992 {
+            @media only screen and (max-width: $dpi-992) { @content; }
+      }
+      @else if $canvas == dpi-960 {
+            @media only screen and (max-width: $dpi-960) { @content; }
+      }
+      @else if $canvas == mobile{
+            @media only screen and (max-width: $dpi-768) { @content; }
+      }
+      @else if $canvas == dpi-768 {
+            @media only screen and (max-width: $dpi-768) { @content; }
+      }
+      @else if $canvas == dpi-640 {
+            @media only screen and (max-width: $dpi-640) { @content; }
+      }
+      @else if $canvas == dpi-568 {
+            @media only screen and (max-width: $dpi-568) { @content; }
+      }
+      @else if $canvas == dpi-480 {
+            @media only screen and (max-width: $dpi-480) { @content; }
+      }
+      @else if $canvas == mobile-s{
+            @media only screen and (max-width: $dpi-480) { @content; }
+      }
+      @else if $canvas == dpi-414 {
+            @media only screen and (max-width: $dpi-414) { @content; }
+      }
+      @else if $canvas == dpi-320 , mobile-xs{
+            @media only screen and (max-width: $dpi-320) { @content; }
+      }
+      @else if $canvas == dpi-240 {
+            @media only screen and (max-width: $dpi-240) { @content; }
+      }
+      @else if $canvas == dpi-1024min {
+            @media only screen and (min-width: $dpi-1024) { @content; }
+      }
+}

@@ -1,0 +1,565 @@
+.contact {
+  background: #e8e8e8;
+}
+
+.contact .container-slider {
+  padding: 0 0 70px 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .contact .container-slider .img {
+    min-height: 280px;
+  }
+}
+.contact .container-slider figure {
+  margin: 0;
+  padding: 0;
+}
+
+.contact .container-slider figure img {
+  display: block;
+  max-width: 100%;
+}
+
+.contact .container-slider figure.cot {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  z-index: 2;
+  display: block;
+  /*width: 100%;
+  max-width: 32rem;*/
+  height: 272px;
+  background: url(../image/contact_ball.png) no-repeat;
+  background-position: left bottom;
+  margin: 0 0 0 -288px;
+  padding: 0 0 0 224px;
+}
+
+@media only screen and (max-width: 480px) {
+  .contact .container-slider figure img {
+    margin: 0 auto;
+  }
+
+  .contact .container-slider figure.cot {
+    left: 0;
+    width: 100%;
+    max-width: none;
+    height: auto;
+    background-position: center bottom;
+    margin: 0;
+    padding: 0 0 196px 0;
+  }
+}
+/*.contact-wrap {
+  width: 100%;
+}*/
+.contact-content {
+  position: relative;
+  width: 100%;
+  height: 1162px;
+  max-width: 960px;
+  margin: 32px auto 56px auto;
+}
+
+.contact-content-wrap {
+  float: right;
+  width: 680px;
+}
+.contact-client .contact-content-wrap {
+  float: none;
+  width: auto;
+}
+
+.contact-service {
+  position: relative;
+  background: #F2F2F2;
+  height: 160px;
+  padding-top: 50px;
+  border-radius: 0 14px 0 0;
+}
+.contact-client .contact-service {
+  border-radius: 14px 14px 0 0;
+}
+
+@media only screen and (max-width: 1024px) {
+  .contact-content-wrap {
+    display: block;
+    float: none;
+    width: auto;
+    padding: 0 32px;
+  }
+
+  .contact-service {
+    border-radius: 14px 14px 0 0;
+  }
+  .contact-service:after {
+    content: '';
+    display: block;
+    margin-top: 39px;
+    height: 1px;
+    width: auto;
+    border-bottom: 1px solid #D4D4D4;
+    background: #FFF;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .contact-content {
+    height: auto;
+    margin: 32px auto 26px;
+  }
+
+  .contact-content-wrap {
+    padding: 0 30px;
+  }
+
+  .contact-service {
+    padding-top: 24px;
+    height: 280px;
+  }
+  .contact-service:after {
+    content: '';
+    display: block;
+    margin-top: 6px;
+    height: 1px;
+    width: auto;
+    border-bottom: 1px solid #D4D4D4;
+    background: #FFF;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .contact-content-wrap {
+    padding: 0;
+  }
+}
+.contact-service-content {
+  position: relative;
+}
+
+.contact-service-content:before, .contact-service-content:after {
+  content: " ";
+  display: table;
+}
+
+.contact-service-content:after {
+  clear: both;
+}
+
+.contact-service-wechat, .contact-service-24h {
+  display: block;
+  width: 336px;
+  text-align: center;
+  font-size: 13px;
+  color: #999;
+  background-repeat: no-repeat;
+  background-position: top center;
+  padding: 100px 0 0 0;
+}
+
+@media only screen and (max-width: 1024px) {
+  .contact-service-wechat, .contact-service-24h {
+    width: 47%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .contact-service-wechat, .contact-service-24h {
+    font-size: 13px;
+    padding: 88px 0 0 0;
+  }
+}
+.contact-service-wechat {
+  float: left;
+  background-image: url(../image/contact_wechat_l.png);
+}
+
+@media only screen and (max-width: 1024px) {
+  .contact-service-wechat {
+    margin: 0 0 0 2%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .contact-service-wechat {
+    width: 50%;
+    background-image: url(../image/contact_wechat_m.png);
+    background-position: center 10px;
+    margin-bottom: 16px;
+  }
+}
+.contact-service-24h {
+  float: right;
+  background-image: url(../image/contact_24h_l.png);
+}
+
+@media only screen and (max-width: 960px) {
+  .contact-service-24h {
+    margin: 0 2% 0 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .contact-service-24h {
+    margin: 24px 0 16px;
+  }
+
+  .contact-service-wechat, .contact-service-24h {
+    float: none;
+    width: 96%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.contact-service-line {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 1px;
+  height: 109px;
+  background: #E0E0E0;
+  margin: -54px 0 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .contact-service-line {
+    position: static;
+    width: 100%;
+    height: 2px;
+    background: #E8E8E8;
+    border-bottom: 1px solid #fff;
+    margin: 0;
+  }
+}
+.contact-form {
+  background: #fff;
+  padding: 36px 0 60px;
+  border-radius: 0 0 14px 0;
+}
+.contact-client .contact-form {
+  border-radius: 0 0 14px 14px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .contact-form {
+    border-radius: 0 0 14px 14px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .contact-form {
+    padding: 36px 32px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .contact-form {
+    padding: 36px 16px;
+  }
+}
+.contact-form-content {
+  width: 630px;
+  margin: 0 auto;
+}
+
+.contact-form-content h2 {
+  display: block;
+  font-size: 20px;
+  margin: 0 0 20px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .contact-form-content {
+    width: 94%;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .contact-form-content {
+    width: 100%;
+    max-width: 620px;
+  }
+}
+.contact-form-input, .contact-form-textarea, .contact-form-select {
+  position: relative;
+  outline: 0;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+}
+
+.contact-form-input input, .contact-form-input textarea, .contact-form-input select, .contact-form-textarea input, .contact-form-textarea textarea, .contact-form-textarea select, .contact-form-select input, .contact-form-select textarea, .contact-form-select select {
+  display: block;
+  height: 100%;
+  outline: 0;
+  padding: 0;
+  resize: none;
+  background: transparent;
+  border: 0;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.contact-form-input {
+  z-index: 0;
+  height: 66px;
+  margin: 0 0 16px;
+}
+
+.contact-form-select {
+  margin: 0 0 16px;
+  height: 66px;
+  color: #999;
+  background: #f2f2f2;
+}
+
+.contact-form-select select option {
+  background: #F2F2F2;
+  outline: 0;
+}
+
+.contact-form-select-arrow {
+  position: absolute;
+  z-index: 1;
+  display: block;
+  width: 10px;
+  height: 100%;
+  top: 50%;
+  right: 32px;
+  width: 16px;
+  height: 16px;
+  margin: -8px 0 0 0;
+}
+
+.contact-form-online {
+  position: relative;
+}
+
+.contact-form-online:before, .contact-form-online:after {
+  content: " ";
+  display: table;
+}
+
+.contact-form-online:after {
+  clear: both;
+}
+
+.contact-form-online .contact-form-input {
+  width: 440px;
+  float: right;
+}
+
+.contact-form-online .contact-form-select {
+  width: 180px;
+  float: left;
+}
+.contact-form-online .contact-form-select select {
+  width: 65%;
+}
+
+.contact-form-online .contact-form-selectStyle {
+  width: 178px !important;
+}
+
+.contact-form-online .contact-form-selectStyle ul {
+  width: 178px !important;
+}
+
+@media only screen and (max-width: 1024px) {
+  .contact-form-online .contact-form-input {
+    width: 68%;
+  }
+
+  .contact-form-online .contact-form-select {
+    width: 30%;
+  }
+
+  .contact-form-online .contact-form-selectStyle {
+    width: 99.5% !important;
+  }
+
+  .contact-form-online .contact-form-selectStyle ul {
+    width: 99.5% !important;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .contact-form-online {
+    padding: 0 0 0 140px;
+  }
+
+  .contact-form-online .contact-form-input {
+    width: 100%;
+  }
+
+  .contact-form-online .contact-form-select {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 130px;
+  }
+}
+.contact-form-textarea textarea {
+  position: relative;
+  padding-top: 16px;
+  width: 90%;
+  margin: 0 auto;
+  height: 210px;
+  line-height: 1.75;
+}
+
+.contact-form-btn {
+  width: 520px;
+  margin: 24px auto 0;
+}
+
+.contact-form-btn:before, .contact-form-btn:after {
+  content: " ";
+  display: table;
+}
+
+.contact-form-btn:after {
+  clear: both;
+}
+
+.contact-form-btn input {
+  display: block;
+  width: 250px;
+  height: 50px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  border: 0;
+  border-radius: 8px;
+  outline: 0;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.contact-form-btn input.reset {
+  background: #666;
+  float: left;
+}
+
+.contact-form-btn input.confirm {
+  background: #256fbf;
+  float: right;
+}
+
+@media only screen and (max-width: 640px) {
+  .contact-form-btn {
+    width: 100%;
+  }
+
+  .contact-form-btn input.reset, .contact-form-btn input.confirm {
+    float: none;
+    margin: 0 auto;
+  }
+
+  .contact-form-btn input.confirm {
+    margin-bottom: 16px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .contact-form-btn input {
+    width: 100%;
+    max-width: 250px;
+  }
+}
+.contact-list {
+  float: left;
+  width: 280px;
+  height: 100%;
+  background: #333;
+  border-radius: 14px 0 0 14px;
+}
+
+.contact-list-link {
+  display: block;
+  width: 100%;
+  margin: 80px auto;
+}
+
+.contact-list-link li {
+  position: relative;
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin: 0 0 80px;
+}
+
+.contact-list-link li a {
+  display: block;
+  /*padding: 4.75rem 0 0 0;*/
+}
+
+.contact-list-link li a h2, .contact-list-link li a h3 {
+  display: block;
+  line-height: 1;
+}
+
+.contact-list-link li a h2 {
+  font-size: 28px;
+  color: #fff;
+  margin: 0 0 6px;
+}
+
+.contact-list-link li a h3 {
+  font-size: 16px;
+  color: #aaa;
+}
+
+.contact-list-link li a span {
+  display: block;
+  width: 65px;
+  height: 65px;
+  margin: 0 auto 10px auto;
+}
+
+.contact-list-link li .link-mobile, .contact-list-link li .link-weixin, .contact-list-link li .link-vip, .contact-list-link li .link-slotmachine, .contact-list-link li .link-allday {
+  background-image: url(../image/contact_link_icon.png);
+  background-repeat: no-repeat;
+}
+
+.contact-list-link li .link-mobile {
+  background-position: 0 0;
+}
+
+.contact-list-link li .link-weixin {
+  background-position: -65px 0;
+}
+
+.contact-list-link li .link-vip {
+  background-position: -130px 0;
+}
+
+.contact-list-link li .link-slotmachine {
+  background-position: -195px 0;
+}
+
+.contact-list-link li .link-allday {
+  background-position: -260px 0;
+}
+
+@media only screen and (max-width: 1024px) {
+  .contact-list {
+    display: none;
+  }
+}
+.contact-client .contact-service:after {
+  content: '';
+  display: block;
+  margin-top: 39px;
+  height: 1px;
+  width: auto;
+  border-bottom: 1px solid #D4D4D4;
+  background: #FFF;
+}
+
+@media only screen and (max-width: 768px) {
+  .contact-client .contact-service:after {
+    margin-top: 6px;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  .contact-client .contact-service-wechat, .contact-client .contact-service-24h {
+    width: 49%;
+  }
+}
+
+/*# sourceMappingURL=contact.css.map */

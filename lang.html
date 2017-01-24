@@ -1,0 +1,38 @@
+<div class="vbox-close needClose"></div>
+<div id="lang">
+	<div class="lang-wrap">
+		<div class="lang-ttl">
+			<img src="image/lang/zh-cn/lang_title.png" />
+		</div>
+		<div class="lang-content">
+			<div class="lang-lang active"><span>简体中文</span></div>
+			<div class="lang-button">
+				<ul>
+					<li><a href=""><span><i class="lang icon-tw"></i></span><b>繁體中文</b></a></li>
+					<li class="active"><a href=""><span><i class="lang icon-cn"></i></span><b>简体中文</b></a></li>
+					<li><a href=""><span><i class="lang icon-vi"></i></span><b>Vietnam</b></a></li>
+					<li><a href=""><span><i class="lang icon-ug"></i></span><b>Uighur</b></a></li>
+					<li><a href=""><span><i class="lang icon-th"></i></span><b>คนไทย</b></a></li>
+					<li><a href=""><span><i class="lang icon-lo"></i></span><b>Lao</b></a></li>
+					<li><a href=""><span><i class="lang icon-ko"></i></span><b>한국어</b></a></li>
+					<li><a href=""><span><i class="lang icon-ca"></i></span><b>Cambodia</b></a></li>
+					<li><a href=""><span><i class="lang icon-id"></i></span><b>Indonesia</b></a></li>
+					<li><a href=""><span><i class="lang icon-es"></i></span><b>Español</b></a></li>
+					<li><a href=""><span><i class="lang icon-en"></i></span><b>English</b></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--HOVER-->
+<script>
+	$(document).ready(function(){
+	    $(".lang-button ul li").mouseover(function(){
+	        $(".lang-lang").removeClass("active");
+	    });
+	    $(".lang-button ul li").mouseout(function(){
+	        $(".lang-lang").addClass("active");
+	    });
+	});
+</script>

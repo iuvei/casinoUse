@@ -1,0 +1,311 @@
+html, body {
+	height: auto;
+}
+body {
+	font-size: $font-size-base;
+	font-family: $font-family-base;
+	line-height: $font-line-height;
+	color: $gray-darkest;
+	overflow-x: hidden;
+}
+
+a {
+	outline: none;
+}
+
+.no {
+	&-scroll {
+		overflow: hidden;
+		height: 100vh;
+	}
+	&-display {
+		display: none !important;
+	}
+}
+
+.show {
+	&-display {
+		display: block !important;
+	}
+}
+
+/* ------- Clearfix ----- */
+.clearfix {
+  @include clearfix;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    padding: 80px 0 0 0;
+  }
+}
+
+
+
+
+
+
+.container-function {
+  position: relative;
+  width: 100%;
+  &.fixed {
+    position: fixed;
+    top: 80px;
+    z-index: 100;
+  }
+}
+.container-membar {
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  text-align: right;
+  background: url(../image/bg_black292929_o7.png);
+  padding: 10px 0;
+}
+@media only screen and (max-width: 1024px) {
+  .container-membar {
+    display: none;
+  }
+}
+.container-membar div {
+  display: inline-block;
+  vertical-align: middle;
+}
+.container-membar [class*="input-"] {
+  height: 30px;
+  background: #3d3d3d;
+  margin: 0 12px 0 0;
+}
+.container-membar [class*="input-"] input {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  border: 0;
+  outline: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  text-indent: 16px;
+}
+.container-membar [class*="input-"] input::-webkit-input-placeholder {
+  color: #999;
+}
+.container-membar [class*="input-"] input::-moz-placeholder {
+  color: #999;
+}
+.container-membar [class*="input-"] input:-ms-input-placeholder {
+  color: #999;
+}
+.container-membar [class*="input-"] input:-moz-placeholder {
+  color: #999;
+}
+.container-membar .input-ac, .container-membar .input-pw {
+  width: 220px;
+}
+.container-membar .input-code {
+  position: relative;
+  width: 160px;
+  background: url("../image/loginInput_bg02.png");
+
+}
+.container-membar .input-ac, .container-membar .input-pw {
+  width: 220px;
+  background: url("../image/loginInput_bg01.png");
+}
+.container-membar .input-code figure {
+  position: absolute;
+  top: 6px;
+  right: -9px;
+  display: block;
+  width: 56px;
+  height: 18px;
+  margin: 0;
+}
+.container-membar .input-code figure img {
+  display: block;
+  /*width: 100%;
+  height: 100%;*/
+}
+.container-membar .link {
+  margin: 0 20px 0 4px;
+}
+.container-membar .link a {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 16px;
+  color: #fff;
+}
+.container-membar .link a.btn-login {
+  border-right: 1px solid #666;
+  padding: 0 16px 0 0;
+  margin: 0 16px 0 0;
+}
+.container-membar .link a.btn-joinus {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+.container-membar .login{
+  line-height: 12px;
+  font-size: 12px;
+}
+.container-membar .login {
+  margin: 0 16px 0 0;
+}
+.container-membar .login a {
+  display: inline-block;
+  vertical-align: top;
+  color: #fff;
+  border-right: 1px solid #fff;
+  margin: 0 8px 0 0;
+  padding: 0 8px 0 0;
+}
+.container-membar .login a.last-child {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+.container-membar .login a span {
+  color: #FDB845;
+}
+.container-slider {
+  position: relative;
+  width: 100%;
+}
+.container-slider .img {
+  min-height: 350px;
+  background-size: cover;
+  background-position: center;
+}
+
+.container-membar .member {
+    margin: 0 16px 0 0;
+    line-height: 12px;
+    font-size: 12px;
+}
+
+.container-membar div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.container-membar .member span {
+    display: inline-block;
+    vertical-align: middle;
+    color: #fff;
+    margin: 0 4px 0 8px;
+}
+
+
+
+.container-membar .member i {
+    display: inline-block;
+    vertical-align: middle;
+    width: 12px;
+    height: 12px;
+}
+
+.container-membar .member i.ico-plus {
+    background: url(../image/icon_plus.png) center no-repeat;
+}
+
+
+
+
+
+
+// Promotions
+.btn-top-pro {
+  display: none;
+}
+
+
+@media only screen and (max-width: 1024px) {
+  .btn-top-pro {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    display: block !important;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background: url(../image/icon_arrow.png) center no-repeat #5c5b5c;
+    background-size: auto 36px;
+    font-size: 40px;
+    color: #fff;
+    cursor: pointer;
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    /*&::after {
+    	font-family: esball;
+    	content: "\e016";
+    	position: absolute;
+    	top: 4px;
+    	left: 0;
+    	display: block;
+    	width: 100%;
+    }*/
+  }
+  .btn-top-pro.fixed {
+    position: fixed;
+    bottom: 0;
+  }
+  .btn-active {
+    background-position: right center !important;
+  }
+}
+
+
+
+
+
+.float-btn-arrow,.float-btn-top {
+  display: none;
+}
+
+
+@media only screen and (max-width: 1024px) {
+  .float-btn-arrow {
+    position: fixed;
+    right: 14px;
+    bottom: 12vh;
+    z-index: 99;
+    display: block;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    background: url(../image/livecasino_arrow_bg.png);
+  }
+  .float-btn-down, .float-btn-top {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+  }
+  .float-btn-down::after, .float-btn-top::after {
+    font-family: esball;
+    position: absolute;
+    left: 0;
+    display: block;
+    width: 100%;
+  }
+  .float-btn-down::after {
+    content: "\e013";
+  }
+  .float-btn-top::after {
+    content: "\e016";
+  }
+}

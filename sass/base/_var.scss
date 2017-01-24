@@ -1,0 +1,39 @@
+// colors
+
+$black		   :  #000 !default;
+$black-light   :  lighten($black, 16.5%) !default;	// #2B2A2A
+
+$gray          :  #A9A8A9 !default;
+$gray-darkest  :  darken($gray, 50.2%)  !default;   // #292829
+$gray-darker   :  darken($gray, 40.5%)  !default;   // #424142
+$gray-dark     :  darken($gray, 30.3%)  !default;   // #5c5b5c
+$gray-light    :  lighten($gray, 10%)   !default;   // #C2C2C2
+$gray-lighter  :  lighten($gray, 25%)   !default;   // #E8E8E8
+$gray-lightest :  lighten($gray, 28.8%) !default;   // #F2F2F2
+
+$blue          :  #256FBF !default;
+$blue-dark     :  darken($blue, 10%)    !default;   // #1d5694
+$blue-light    :  lighten($blue, 10%)   !default;   // #3d88da
+
+$navy		   :  #022644 !default;
+
+$red           :  #F64E5E !default;
+$red-light     :  lighten($red, 10%)    !default;   // #f87a7b
+$red-hue       :  adjust-hue($red, 5%)  !default;   // #f65549
+
+$yellow		   :  #FDBA45 !default;
+
+// fonts
+$font-size-root     : 15px !default;
+$font-size-base     : 1rem !default;
+
+$font-size-lg       : 1.25rem !default;
+$font-size-sm       : .875rem !default;
+$font-size-xs       : .75rem !default;
+
+$font-line-height   : 1.5 !default;
+
+$font-family-sans-serif: "Helvetica Neue", Helvetica, Arial, '微軟正黑體', 'Microsoft JhengHei' , sans-serif !default;
+$font-family-serif     : Georgia, "Times New Roman", Times, serif !default;
+$font-family-monospace : Menlo, Monaco, Consolas, "Courier New", monospace !default;
+$font-family-base      : $font-family-sans-serif !default;

@@ -1,0 +1,222 @@
+.lang.icon-ca::after {
+  background-image: url("../image/lang/ca.png");
+}
+.lang.icon-cn::after {
+  background-image: url("../image/lang/cn.png");
+}
+.lang.icon-en::after {
+  background-image: url("../image/lang/en.png");
+}
+.lang.icon-es::after {
+  background-image: url("../image/lang/es.png");
+}
+.lang.icon-id::after {
+  background-image: url("../image/lang/id.png");
+}
+.lang.icon-ko::after {
+  background-image: url("../image/lang/ko.png");
+}
+.lang.icon-lo::after {
+  background-image: url("../image/lang/lo.png");
+}
+.lang.icon-th::after {
+  background-image: url("../image/lang/th.png");
+}
+.lang.icon-tw::after {
+  background-image: url("../image/lang/tw.png");
+}
+.lang.icon-ug::after {
+  background-image: url("../image/lang/ug.png");
+}
+.lang.icon-vi::after {
+  background-image: url("../image/lang/vi.png");
+}
+.lang::after {
+  content: "";
+  display: block;
+  background-position: center;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  margin: auto;
+  /*margin: 6px;*/
+}
+
+.lang::after {
+  width: 28px;
+  height: 100%;
+}
+
+i.lang::after {
+  width: 48px;
+}
+
+#lang {
+  text-align: center;
+}
+@media only screen and (max-width: 1024px) {
+  #lang .lang-ttl {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  #lang .lang-wrap {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+  }
+}
+#lang .lang-content {
+  position: relative;
+  width: 100%;
+}
+#lang .lang-lang {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  line-height: 48px;
+  font-size: 18px;
+  color: #fff;
+  margin-top: 1em;
+  margin-bottom: 48px;
+}
+#lang .lang-lang span {
+  display: none;
+}
+#lang .lang-lang:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 40px;
+  height: 1px;
+  background-color: #fff;
+  margin: 0 0 0  -18px;
+}
+#lang .lang-lang.active span {
+  display: block;
+}
+@media only screen and (max-width: 1024px) {
+  #lang .lang-lang {
+    display: none;
+  }
+}
+#lang .lang-button {
+  display: block;
+  width: 100%;
+}
+#lang .lang-button ul {
+  display: block;
+  width: 100%;
+  text-align: left;
+  max-width: 656px;
+  margin: 0 auto;
+}
+#lang .lang-button li {
+  display: inline-block;
+  width: 68px;
+  height: 68px;
+  line-height: 1;
+  margin: 0 16px 16px 16px;
+}
+#lang .lang-button li span {
+  display: inline-block;
+  /*width: 4.334rem;
+  height: 4.334rem;*/
+  line-height: 1;
+  /*border-radius: 50%;
+  border: 1px solid transparent;*/
+  margin: 10px;
+}
+#lang .lang-button li span .lang {
+  display: inline-block;
+  overflow: hidden;
+  width: 48px;
+  height: 48px;
+}
+#lang .lang-button li b {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  line-height: 48px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: normal;
+  color: #fff;
+}
+#lang .lang-button li a.lang {
+  display: inline-block;
+  overflow: hidden;
+  width: 48px;
+  height: 48px;
+}
+#lang .lang-button li.active, #lang .lang-button li:hover {
+  background: url(../image/lang_circle.png) no-repeat
+}
+/*#lang .lang-button li.active span, #lang .lang-button li:hover span {
+  border-color: none;
+}*/
+#lang .lang-button li:hover b {
+  display: inline-block;
+}
+@media only screen and (max-width: 1024px) {
+  #lang .lang-button {
+    max-width: 640px;
+    text-align: left;
+    margin: 0 auto;
+    padding: 160px 0 40px;
+  }
+  #lang .lang-button ul {
+    max-width: none;
+    margin-left: 64px;
+  }
+  #lang .lang-button li {
+    width: 49.5%;
+    border: none;
+    border-radius: 0;
+    margin: 0 0 24px 0;
+  }
+  #lang .lang-button li span {
+    vertical-align: middle;
+  }
+  #lang .lang-button li span .lang {
+    display: inline-block;
+    overflow: hidden;
+    width: 48px;
+    height: 48px;
+  }
+  #lang .lang-button li b {
+    display: inline-block;
+    vertical-align: middle;
+    position: static;
+    width: auto;
+    line-height: 1;
+    text-align: left;
+    font-size: 18px;
+    font-weight: normal;
+    color: #fff;
+    margin: 0 0 0 40px;
+  }
+  #lang .lang-button li.active span, #lang .lang-button li:hover span {
+    border-color: #666;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #lang .lang-button ul {
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 480px) {
+  #lang .lang-button {
+    max-width: 240px;
+    padding: 120px 0 0 0;
+  }
+  #lang .lang-button li {
+    width: 100%;
+  }
+}

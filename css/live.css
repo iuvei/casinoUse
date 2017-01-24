@@ -1,0 +1,987 @@
+@charset "UTF-8";
+.livecasino {
+  background: #e8e8e8;
+}
+
+.livecasino-wrap {
+  max-width: 960px;
+  background: #000;
+  margin: 82px auto 48px auto;
+}
+
+@media only screen and (max-width: 1024px) {
+  .livecasino-wrap {
+    max-width: none;
+    margin: 0 auto;
+    padding: 16px 0 0 0;
+  }
+}
+.livecasino-nav {
+  width: 100%;
+  background: #2a2a2a;
+  margin: 0 0 4px 0;
+}
+
+.livecasino-nav ul {
+  position: relative;
+  min-height: 80px;
+  /*display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: stretch;
+  align-items: stretch;
+  -webkit-align-content: flex-start;
+  align-content: flex-start;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;*/
+  padding: 0 0 0 170px;
+}
+
+.livecasino-nav ul::before {
+  content: "";
+  display: table;
+}
+
+.livecasino-nav ul::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.livecasino-nav li {
+  float: left;
+}
+
+.livecasino-nav ul.row-2 li::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 2px;
+  background: #202020;
+  border-bottom: 1px solid #3D3D3D;
+}
+
+.livecasino-nav ul.row-2 li.noline::before {
+  display: none;
+}
+
+/*.livecasino-nav ul.row-2 li:first-child::before, .livecasino-nav ul.row-2 li:nth-child(10)::before, .livecasino-nav ul.row-2 li:nth-child(11)::before, .livecasino-nav ul.row-2 li:nth-child(12)::before, .livecasino-nav ul.row-2 li:nth-child(13)::before, .livecasino-nav ul.row-2 li:nth-child(14)::before, .livecasino-nav ul.row-2 li:nth-child(15)::before, .livecasino-nav ul.row-2 li:nth-child(16)::before, .livecasino-nav ul.row-2 li:nth-child(17)::before {
+  display: none;
+}*/
+.livecasino-nav ul.col-1 li, .livecasino-nav ul.col-2 li, .livecasino-nav ul.col-3 li, .livecasino-nav ul.col-4 li, .livecasino-nav ul.col-5 li, .livecasino-nav ul.col-6 li {
+  width: 20%;
+  font-size: 18px;
+}
+
+.livecasino-nav ul li.last-child::after {
+  display: none;
+}
+
+.livecasino-nav ul.col-7 li {
+  width: 16.66%;
+}
+
+.livecasino-nav ul.col-8 li {
+  width: 14.28%;
+}
+
+.livecasino-nav ul.col-9 li {
+  width: 12.5%;
+}
+
+/*.livecasino-nav ul.col-9 li:last-child::after {
+  display: none;
+}*/
+.livecasino-nav ul.col-10 li, .livecasino-nav ul.col-11 li, .livecasino-nav ul.col-12 li, .livecasino-nav ul.col-13 li, .livecasino-nav ul.col-14 li, .livecasino-nav ul.col-15 li, .livecasino-nav ul.col-16 li, .livecasino-nav ul.col-17 li {
+  width: 12.5%;
+}
+
+.livecasino-nav ul.col-10 li a, .livecasino-nav ul.col-11 li a, .livecasino-nav ul.col-12 li a, .livecasino-nav ul.col-13 li a, .livecasino-nav ul.col-14 li a, .livecasino-nav ul.col-15 li a, .livecasino-nav ul.col-16 li a, .livecasino-nav ul.col-17 li a {
+  line-height: 24px;
+  padding: 8px 0;
+}
+
+/*.livecasino-nav ul.col-17 li:last-child::after {
+  display: none;
+}*/
+@media only screen and (max-width: 1024px) {
+  .livecasino-nav ul {
+    padding: 0;
+  }
+
+  .livecasino-nav ul.row-1 li::before, .livecasino-nav ul.row-2 li::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    display: block !important;
+    width: 100%;
+    height: 1px;
+    background: #202020;
+    border-bottom: 1px solid #3D3D3D;
+  }
+
+  /*.livecasino-nav ul li::before {
+    opacity: 1 !important;
+  }*/
+  .livecasino-nav ul li.table-noline::before {
+    display: none;
+  }
+
+  /*.livecasino-nav ul.col-5 li:nth-child(1)::before, .livecasino-nav ul.col-5 li:nth-child(2)::before, .livecasino-nav ul.col-5 li:nth-child(3)::before, .livecasino-nav ul.col-6 li:nth-child(1)::before, .livecasino-nav ul.col-6 li:nth-child(2)::before, .livecasino-nav ul.col-6 li:nth-child(3)::before {
+    opacity: 1 !important;
+  }*/
+  /*.livecasino-nav ul.col-10 li::before, .livecasino-nav ul.col-11 li::before, .livecasino-nav ul.col-12 li::before, .livecasino-nav ul.col-13 li::before, .livecasino-nav ul.col-14 li::before, .livecasino-nav ul.col-15 li::before, .livecasino-nav ul.col-16 li::before, .livecasino-nav ul.col-17 li::before {
+    opacity: 1 !important;
+  }*/
+}
+@media only screen and (max-width: 480px) {
+  .livecasino-nav ul {
+    min-height: 50px;
+  }
+}
+.livecasino-nav li {
+  position: relative;
+  display: block;
+  text-align: center;
+  font-size: 15px;
+}
+
+.livecasino-nav li a {
+  display: block;
+  line-height: 32px;
+  color: #ACADB2;
+  padding: 24px 0;
+}
+
+.livecasino-nav li.bbin {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 170px !important;
+  height: 80px;
+  background: url(../image/live_bbin_bg.png);
+  padding: 0 !important;
+  cursor: pointer;
+}
+
+.livecasino-nav li.bbin span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.livecasino-nav li.bbin span i {
+  position: absolute;
+  z-index: 1;
+  background-repeat: no-repeat;
+}
+
+.livecasino-nav li.bbin span .logo {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../image/logo_bbin_sliver.png);
+  background-position: 24px center;
+  background-size: auto 32px;
+}
+
+.livecasino-nav li.bbin span .arrow {
+  top: 50%;
+  right: 16px;
+  width: 28px;
+  height: 28px;
+  background-image: url(../image/icon_arrow_down.png);
+  background-position: bottom;
+  margin: -14px 0 0 0;
+}
+
+.livecasino-nav li.bbin .link {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  z-index: 99;
+  display: block;
+  width: 168px;
+  text-align: left;
+  height: 0;
+  font-size: 15px;
+  background: url(../image/livecasino_sub.png);
+  margin: -3px 0 0 0;
+  overflow: hidden;
+  -moz-transition: height 0.3s;
+  -o-transition: height 0.3s;
+  -webkit-transition: height 0.3s;
+  transition: height 0.3s;
+}
+
+.livecasino-nav li.bbin .link a {
+  position: relative;
+  line-height: 56px;
+  color: #9F9F9F;
+  background: #333;
+  padding: 0;
+}
+
+.livecasino-nav li.bbin .link a i {
+  display: block;
+  font-style: normal;
+  margin: 0 0 0 72px;
+}
+
+.livecasino-nav li.bbin .link a i[class*="ico-"]::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 9.6px;
+  display: block;
+  width: 52px;
+  height: 40px;
+  background-image: url(../image/livecasino_icon_list.png);
+  background-repeat: no-repeat;
+}
+
+.livecasino-nav li.bbin .link a i.ico-multibet::before {
+  background-position: 0 0;
+}
+
+.livecasino-nav li.bbin .link a i.ico-livedealer::before {
+  background-position: -52px 0;
+}
+
+.livecasino-nav li.bbin .link a i.ico-ultimate::before {
+  background-position: -104px 0;
+}
+
+.livecasino-nav li.bbin .link a i.ico-bid::before {
+  background-position: -156px 0;
+}
+
+.livecasino-nav li.bbin .link a i.ico-vip::before {
+  background-position: -208px 0;
+}
+
+.livecasino-nav li.bbin .link a i.ico-robotlive::before {
+  background-position: -260px 0;
+}
+
+.livecasino-nav li.bbin .link a:hover {
+  background: url(../image/live_bbin_over.png);
+}
+
+.livecasino-nav li.bbin .link a:hover i.ico-multibet::before {
+  background-position: 0 -40px;
+}
+
+.livecasino-nav li.bbin .link a:hover i.ico-livedealer::before {
+  background-position: -52px -40px;
+}
+
+.livecasino-nav li.bbin .link a:hover i.ico-ultimate::before {
+  background-position: -104px -40px;
+}
+
+.livecasino-nav li.bbin .link a:hover i.ico-bid::before {
+  background-position: -156px -40px;
+}
+
+.livecasino-nav li.bbin .link a:hover i.ico-vip::before {
+  background-position: -208px -40px;
+}
+
+.livecasino-nav li.bbin .link a:hover i.ico-robotlive::before {
+  background-position: -260px -40px;
+}
+
+.livecasino-nav li.bbin .link a:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: #E0BB77;
+}
+
+.livecasino-nav li.bbin:hover span::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  display: block;
+  width: 130px;
+  height: 77px;
+  border: 0;
+  background: url(../image/live_bbin_mask.png) center no-repeat;
+  /*-webkit-clip-path: polygon(0 0, 100% 0%, 21% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0%, 21% 100%, 0% 100%);*/
+  /*FIREFOX、IE目前不支援*/
+}
+
+.livecasino-nav li.bbin:hover span .arrow {
+  background-position: top;
+}
+
+.livecasino-nav li.bbin:hover .link {
+  height: 336px;
+  padding-top: 3px;
+  -moz-transition: height 0.3s;
+  -o-transition: height 0.3s;
+  -webkit-transition: height 0.3s;
+  transition: height 0.3s;
+}
+
+@media only screen and (max-width: 1024px) {
+  .livecasino-nav li.bbin {
+    position: relative;
+    width: 33.3% !important;
+    background: #2a2a2a;
+  }
+
+  .livecasino-nav li.bbin span .logo {
+    background-size: auto 45px;
+    background-position: center;
+  }
+
+  .livecasino-nav li.bbin span .arrow {
+    display: none;
+  }
+
+  .livecasino-nav li.bbin .link {
+    display: none;
+  }
+
+  .livecasino-nav li.bbin:hover span::before {
+    display: none;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .livecasino-nav li.bbin {
+    height: auto;
+  }
+
+  .livecasino-nav li.bbin span {
+    height: 50px;
+  }
+
+  .livecasino-nav li.bbin span .logo {
+    background-size: auto 26px;
+  }
+}
+.livecasino-nav li::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  width: 1px;
+  height: 100%;
+  background: #202020;
+  border-right: 1px solid #3D3D3D;
+}
+
+@media only screen and (max-width: 1024px) {
+  .livecasino-nav li {
+    width: 33.3% !important;
+    font-size: 24px !important;
+  }
+
+  .livecasino-nav li.last-child::after {
+    display: block !important;
+  }
+
+  .livecasino-nav li.nth-child-3n::after {
+    display: none !important;
+  }
+
+  .livecasino-nav li a {
+    line-height: 32px !important;
+    padding: 24px 0 !important;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .livecasino-nav li a {
+    line-height: 34px !important;
+    font-size: 15px !important;
+    padding: 8px 0 !important;
+  }
+}
+.livecasino-content {
+  position: relative;
+}
+
+.livecasino-content [class*="block-"] {
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.livecasino-content .block {
+  margin: 0 0 4px 0;
+}
+
+.livecasino-content .block:before, .livecasino-content .block:after {
+  content: " ";
+  display: table;
+}
+
+.livecasino-content .block:after {
+  clear: both;
+}
+
+/*.livecasino-content .block:last-child {
+  margin: 0;
+}*/
+.livecasino-content .block-bbin {
+  width: 75%;
+  height: 488px;
+  background-image: url(../image/lang/zh-cn/bbin_n.png);
+  float: left;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.livecasino-content .block-bbin-wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.livecasino-content .block-bbin-wrap .link {
+  position: absolute;
+  top: 50%;
+  right: 80px;
+  z-index: 1;
+  display: block;
+  width: 372px;
+  margin: -116px 0 0 0;
+}
+
+.livecasino-content .block-bbin-wrap .link li {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin: 8px 24px 8px 0;
+}
+
+/*.livecasino-content .block-bbin-wrap .link li:nth-child(3n) {
+  margin-right: 0;
+}*/
+.livecasino-content .block-bbin-wrap .link li a {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url(../image/bg_black202020_o5.png) repeat;
+  border: 1px solid #626262;
+}
+
+.livecasino-content .block-bbin-wrap .link li a h2 {
+  position: absolute;
+  bottom: 18px;
+  display: block;
+  width: 100%;
+  line-height: 1;
+  font-size: 16px;
+  font-weight: normal;
+  text-align: center;
+  color: #9F9F9F;
+}
+
+.livecasino-content .block-bbin-wrap .link li a i {
+  display: block;
+  width: 44px;
+  height: 33px;
+  margin: 18px auto 0 auto;
+}
+
+.livecasino-content .block-bbin-wrap .link li a i[class*="ico-"] {
+  background-image: url(../image/livecasino_menu_icon.png);
+  background-repeat: no-repeat;
+}
+
+.livecasino-content .block-bbin-wrap .link li a i.ico-multibet {
+  background-position: 0 0;
+}
+
+.livecasino-content .block-bbin-wrap .link li a i.ico-livedealer {
+  background-position: -44px 0;
+}
+
+.livecasino-content .block-bbin-wrap .link li a i.ico-ultimate {
+  background-position: -88px 0;
+}
+
+.livecasino-content .block-bbin-wrap .link li a i.ico-bid {
+  background-position: -132px 0;
+}
+
+.livecasino-content .block-bbin-wrap .link li a i.ico-vip {
+  background-position: -176px 0;
+}
+
+.livecasino-content .block-bbin-wrap .link li a i.ico-robotlive {
+  background-position: -220px 0;
+}
+
+.livecasino-content .block-bbin-wrap .link li a:hover {
+  background: #202020;
+  border: 1px solid #EDC580;
+}
+
+.livecasino-content .block-bbin-wrap .link li a:hover h2 {
+  color: #fff;
+}
+
+.livecasino-content .block-bbin-wrap .link li a:hover i.ico-multibet {
+  background-position: 0 -33px;
+}
+
+.livecasino-content .block-bbin-wrap .link li a:hover i.ico-livedealer {
+  background-position: -44px -33px;
+}
+
+.livecasino-content .block-bbin-wrap .link li a:hover i.ico-ultimate {
+  background-position: -88px -33px;
+}
+
+.livecasino-content .block-bbin-wrap .link li a:hover i.ico-bid {
+  background-position: -132px -33px;
+}
+
+.livecasino-content .block-bbin-wrap .link li a:hover i.ico-vip {
+  background-position: -176px -33px;
+}
+
+.livecasino-content .block-bbin-wrap .link li a:hover i.ico-robotlive {
+  background-position: -220px -33px;
+}
+
+.livecasino-content .block-bbin-wrap .play {
+  position: absolute;
+  bottom: 26px;
+  right: 24px;
+  z-index: 1;
+  width: 142px;
+  height: 38px;
+  border: 0;
+  text-indent: -9999px;
+  background: url(../image/live_bbin_play.png) no-repeat;
+  background-position: center top;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.livecasino-content .block-bbin-wrap .play:hover {
+  color: #fff;
+  background-position: center bottom;
+}
+
+.livecasino-content .block-bbin:hover .block-bbin-wrap {
+  display: block;
+}
+
+.livecasino-content .block-bbin:hover {
+  background-image: url(../image/lang/zh-cn/bbin_h.png);
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.livecasino-content .block-bbin img {
+  display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  .livecasino-content .block-bbin {
+    width: 100%;
+    height: auto;
+  }
+
+  .livecasino-content .block-bbin-wrap {
+    display: none !important;
+  }
+
+  .livecasino-content .block-bbin img {
+    display: block;
+    width: 100%;
+  }
+}
+.livecasino-content .block-ad1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 24.6875%;
+  height: 488px;
+}
+
+.livecasino-content .block-ad1 a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.livecasino-content .block-ad1 img {
+  display: none;
+}
+
+.livecasino-content .block-ad1.img-1 {
+  background-image: url(../image/lang/zh-cn/ad01_l.png);
+}
+
+.livecasino-content .block-ad1.img-2 {
+  background-image: url(../image/lang/zh-cn/ad02_l.png);
+}
+
+@media only screen and (max-width: 1024px) {
+  .livecasino-content .block-ad1 {
+    position: static;
+    height: auto;
+    background-image: none !important;
+  }
+
+  .livecasino-content .block-ad1 img {
+    display: block;
+    width: 100%;
+  }
+
+  .livecasino-content .block-ad1 img.mobile {
+    display: none;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .livecasino-content .block-ad1 {
+    width: 100%;
+    padding: 0 0 4px 0;
+  }
+
+  .livecasino-content .block-ad1 img.tablet {
+    display: none;
+  }
+
+  .livecasino-content .block-ad1 img.mobile {
+    display: block;
+  }
+}
+.livecasino-content .block-others:before, .livecasino-content .block-others:after {
+  content: " ";
+  display: table;
+}
+
+.livecasino-content .block-others:after {
+  clear: both;
+}
+
+.livecasino-content .block-others div {
+  margin: 0 .4% 0 0;
+  float: left;
+}
+
+.livecasino-content .block-others .img-1 {
+  margin: 0;
+  float: right;
+}
+
+.livecasino-content .block-others div img {
+  display: none;
+  width: 100%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .livecasino-content .block-others div {
+    margin: 0 .4% 4px 0;
+  }
+
+  .livecasino-content .block-others div img {
+    display: block;
+  }
+
+  .livecasino-content .block-others div img.mobile {
+    display: none;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .livecasino-content .block-others div {
+    width: 100% !important;
+    float: none;
+    margin: 0 0 4px 0;
+  }
+
+  .livecasino-content .block-others div img.tablet {
+    display: none;
+  }
+
+  .livecasino-content .block-others div img.mobile {
+    display: block;
+  }
+}
+.livecasino-content .block-ag, .livecasino-content .block-allbet, .livecasino-content .block-og, .livecasino-content .block-gd, .livecasino-content .block-sa, .livecasino-content .block-ad2 {
+  position: relative;
+  width: 100%;
+  height: 242px;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.livecasino-content .block-ag a, .livecasino-content .block-allbet a, .livecasino-content .block-og a, .livecasino-content .block-gd a, .livecasino-content .block-sa a, .livecasino-content .block-ad2 a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.livecasino-content .block-ag:hover, .livecasino-content .block-allbet:hover, .livecasino-content .block-og:hover, .livecasino-content .block-gd:hover, .livecasino-content .block-sa:hover, .livecasino-content .block-ad2:hover {
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+@media only screen and (max-width: 1024px) {
+  .livecasino-content .block-ag, .livecasino-content .block-allbet, .livecasino-content .block-og, .livecasino-content .block-gd, .livecasino-content .block-sa, .livecasino-content .block-ad2 {
+    height: auto;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .livecasino-content.col-1 .block-ad1 {
+    width: 100%;
+    padding: 0 0 4px 0;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .livecasino-content.col-2 .block-ad1, .livecasino-content.col-3 .block-ad1 {
+    display: none;
+  }
+}
+.livecasino-content.col-2 .block-others div {
+  width: 49.8%;
+}
+
+.livecasino-content.col-2 .block-ag {
+  background-image: url(../image/lang/zh-cn/ag_l_n.png);
+}
+
+.livecasino-content.col-2 .block-ag:hover {
+  background-image: url(../image/lang/zh-cn/ag_l_h.png);
+}
+
+.livecasino-content.col-2 .block-allbet {
+  background-image: url(../image/lang/zh-cn/allbet_l_n.png);
+}
+
+.livecasino-content.col-2 .block-allbet:hover {
+  background-image: url(../image/lang/zh-cn/allbet_l_h.png);
+}
+
+.livecasino-content.col-2 .block-og {
+  background-image: url(../image/lang/zh-cn/og_l_n.png);
+}
+
+.livecasino-content.col-2 .block-og:hover {
+  background-image: url(../image/lang/zh-cn/og_l_h.png);
+}
+
+.livecasino-content.col-2 .block-gd {
+  background-image: url(../image/lang/zh-cn/gd_l_n.png);
+}
+
+.livecasino-content.col-2 .block-gd:hover {
+  background-image: url(../image/lang/zh-cn/gd_l_h.png);
+}
+
+.livecasino-content.col-2 .block-sa {
+  background-image: url(../image/lang/zh-cn/sa_l_n.png);
+}
+
+.livecasino-content.col-2 .block-sa:hover {
+  background-image: url(../image/lang/zh-cn/sa_l_h.png);
+}
+
+@media only screen and (max-width: 480px) {
+  .livecasino-content.col-2 .block-ad2 {
+    margin-bottom: 4px !important;
+  }
+}
+.livecasino-content.col-3 .block-others div, .livecasino-content.col-4 .block-others div {
+  width: 24.7%;
+}
+
+.livecasino-content.col-3 .block-ag, .livecasino-content.col-4 .block-ag {
+  background-image: url(../image/lang/zh-cn/ag_m_n.png);
+}
+
+.livecasino-content.col-3 .block-ag:hover, .livecasino-content.col-4 .block-ag:hover {
+  background-image: url(../image/lang/zh-cn/ag_m_h.png);
+}
+
+.livecasino-content.col-3 .block-allbet, .livecasino-content.col-4 .block-allbet {
+  background-image: url(../image/lang/zh-cn/allbet_m_n.png);
+}
+
+.livecasino-content.col-3 .block-allbet:hover, .livecasino-content.col-4 .block-allbet:hover {
+  background-image: url(../image/lang/zh-cn/allbet_m_h.png);
+}
+
+.livecasino-content.col-3 .block-og, .livecasino-content.col-4 .block-og {
+  background-image: url(../image/lang/zh-cn/og_m_n.png);
+}
+
+.livecasino-content.col-3 .block-og:hover, .livecasino-content.col-4 .block-og:hover {
+  background-image: url(../image/lang/zh-cn/og_m_h.png);
+}
+
+.livecasino-content.col-3 .block-gd, .livecasino-content.col-4 .block-gd {
+  background-image: url(../image/lang/zh-cn/gd_m_n.png);
+}
+
+.livecasino-content.col-3 .block-gd:hover, .livecasino-content.col-4 .block-gd:hover {
+  background-image: url(../image/lang/zh-cn/gd_m_h.png);
+}
+
+.livecasino-content.col-3 .block-sa, .livecasino-content.col-4 .block-sa {
+  background-image: url(../image/lang/zh-cn/sa_m_n.png);
+}
+
+.livecasino-content.col-3 .block-sa:hover, .livecasino-content.col-4 .block-sa:hover {
+  background-image: url(../image/lang/zh-cn/sa_m_h.png);
+}
+
+.livecasino-content.col-3 .block-others .block-ad2 {
+  width: 49.8%;
+  margin: 0;
+  float: right;
+}
+
+.livecasino-content.col-4 .block-others .block-gd, .livecasino-content.col-4 .block-others .block-ad2, .livecasino-content.col-2 .block-others .block-ad2 {
+  margin: 0;
+  float: right;
+}
+
+@media only screen and (max-width: 1024px) {
+  .livecasino-content.col-3 .block-others div {
+    width: 49.8%;
+    margin: 0 0 4px 0 !important;
+  }
+
+  .livecasino-content.col-3 .block-others .block-ag {
+    margin-right: .4% !important;
+  }
+
+  .livecasino-content.col-3 .block-others .block-ad2 {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .livecasino-content.col-4 .block-others div {
+    width: 49.8%;
+    margin: 0 0 4px 0 !important;
+  }
+
+  .livecasino-content.col-4 .block-others .block-ag {
+    margin-right: .4% !important;
+  }
+
+  .livecasino-content.col-4 .block-ad1 {
+    width: 100%;
+    padding: 0 0 4px 0;
+  }
+
+  .livecasino-content.col-4 .block-ad1.rwd-hide {
+    display: none;
+  }
+}
+.livecasino-content.col-5 .block-others div {
+  width: 19.68%;
+}
+
+.livecasino-content.col-5 .block-others .block-sa {
+  margin-right: 0;
+}
+
+.livecasino-content.col-5 .block-others div.block-ad1 {
+  width: 24.6875%;
+}
+
+.livecasino-content.col-5 .block-ag {
+  background-image: url(../image/lang/zh-cn/ag_s_n.png);
+}
+
+.livecasino-content.col-5 .block-ag:hover {
+  background-image: url(../image/lang/zh-cn/ag_s_h.png);
+}
+
+.livecasino-content.col-5 .block-allbet {
+  background-image: url(../image/lang/zh-cn/allbet_s_n.png);
+}
+
+.livecasino-content.col-5 .block-allbet:hover {
+  background-image: url(../image/lang/zh-cn/allbet_s_h.png);
+}
+
+.livecasino-content.col-5 .block-og {
+  background-image: url(../image/lang/zh-cn/og_s_n.png);
+}
+
+.livecasino-content.col-5 .block-og:hover {
+  background-image: url(../image/lang/zh-cn/og_s_h.png);
+}
+
+.livecasino-content.col-5 .block-gd {
+  background-image: url(../image/lang/zh-cn/gd_s_n.png);
+}
+
+.livecasino-content.col-5 .block-gd:hover {
+  background-image: url(../image/lang/zh-cn/gd_s_h.png);
+}
+
+.livecasino-content.col-5 .block-sa {
+  background-image: url(../image/lang/zh-cn/sa_s_n.png);
+}
+
+.livecasino-content.col-5 .block-sa:hover {
+  background-image: url(../image/lang/zh-cn/sa_s_h.png);
+}
+
+.livecasino-content.col-5 .block-ad1 {
+  width: 24.6875%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .livecasino-content.col-5 .block-others div {
+    width: 49.8%;
+  }
+
+  .livecasino-content.col-5 .block-others .block-allbet, .livecasino-content.col-5 .block-others .block-gd, .livecasino-content.col-5 .block-others .block-ad1 {
+    margin-right: 0;
+  }
+
+  .livecasino-content.col-5 .block-others div.block-ad1 {
+    width: 49.8%;
+  }
+
+  .livecasino-content.col-5 .block-ad1 {
+    width: 49.8%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .livecasino-content.col-5 .block-ad1 {
+    margin-bottom: 0;
+  }
+}
+
+/*# sourceMappingURL=live.css.map */

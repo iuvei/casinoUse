@@ -1,0 +1,407 @@
+.login-wrap {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+.login-main {
+  width: 100%;
+  max-width: 360px;
+  margin: 120px auto 48px auto;
+}
+.login-main ul {
+  display: block;
+  width: 100%;
+}
+.login-main li {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 40px;
+  border-radius: 7px;
+  background: #DDD;
+  margin: 0 0 32px 0;
+  overflow: hidden;
+}
+.login-main li input {
+  display: block;
+  width: 100%;
+  line-height: 40px;
+  background: none;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  text-indent: 16px;
+}
+/*.login-main li:last-child {
+  padding-right: 96px;
+}*/
+.login-main li figure {
+  position: absolute;
+  top: 3px;
+  right: 4px;
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+}
+.login-main li figure img {
+  display: block;
+  max-width: 100%;
+}
+@media only screen and (max-width: 480px) {
+  .login-main {
+    max-width: 250px;
+  }
+}
+.login-forget {
+  display: block;
+  width: 100%;
+  line-height: 1;
+  text-align: center;
+  color: #fff;
+  margin: 0 0 32px 0;
+}
+.login-button {
+  display: block;
+  width: 100%;
+}
+.login-button:before, .login-button:after {
+  content: " ";
+  display: table;
+}
+.login-button:after {
+  clear: both;
+}
+.login-button button {
+  display: block;
+  width: 175px;
+  line-height: 40px;
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 7px;
+  border: 0;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
+.login-button button.login {
+  float: left;
+  background: #256FBF;
+  &:hover {
+    background: #4892E2;
+  }
+}
+.login-button button.register {
+  float: right;
+  background: #666;
+  &:hover {
+    background: #898989;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .login-button button {
+    width: 100%;
+    float: none !important;
+  }
+  .login-button button.login {
+    margin: 0 0 32px 0;
+  }
+}
+.login-wrap-small {
+  position: relative;
+  padding-top: 5px;
+}
+.login-wrap-small .lws-bg {
+  display: block;
+  height: 140px;
+  margin: 0 0 24px;
+}
+.login-wrap-small .lws-bg.lottery {
+  background: url(../image/lottery_login_bg.jpg) center no-repeat;
+}
+.login-wrap-small .lws-bg.sport {
+  background: url(../image/sport_login_bg.jpg) center no-repeat;
+}
+.login-wrap-small .lws-bg.esport {
+  background: url(../image/esport_login_bg.jpg) center no-repeat;
+}
+.login-wrap-small .lws-bg.game {
+  background: url(../image/game_login_bg.jpg) center no-repeat;
+}
+.login-wrap-small .lws-content {
+  max-width: 250px;
+  margin: 0 auto;
+}
+.login-wrap-small .lws-content h2 {
+  display: block;
+  line-height: 1;
+  font-size: 18px;
+  font-weight: normal;
+  color: #474A4C;
+  margin: 0 0 16px;
+}
+.login-wrap-small .lws-content button.login {
+  background: #54B9FF;
+  &:hover {
+    background: #7DCBFF;
+  }
+}
+.login-wrap-small .lws-content button.signup {
+  background: #AEAEAE;
+  &:hover {
+    background: #C2C2C2;
+  }
+}
+.login-wrap-small .lws-content button {
+  display: block;
+  width: 100%;
+  line-height: 40px;
+  text-align: center;
+  color: #fff;
+  border: 0;
+  border-radius: 4px;
+  margin: 0 0 16px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.login-wrap-small .lws-forget {
+  display: block;
+  text-align: center;
+  margin: 0 0 16px;
+}
+.login-wrap-small .lws-forget a {
+  display: inline-block;
+  line-height: 1.25;
+  text-decoration: underline;
+  color: #939393;
+}
+.login-wrap-small .lws-input {
+  position: relative;
+  display: block;
+}
+.login-wrap-small .lws-input input {
+  display: block;
+  height: 52px;
+  color: #292829;
+  border: 1px solid #CCC;
+  border-radius: 4px;
+  background-color: transparent;
+  padding: 0 64px 0 16px;
+  margin-bottom: 16px;
+  text-indent: 16px;
+}
+.login-wrap-small .lws-input[class*="ico-"]::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 14px;
+  left: 8px;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.login-wrap-small .lws-input.ico-acc::before {
+  background-image: url(../image/icon_mem.png);
+  background-position: center right;
+}
+.login-wrap-small .lws-input.ico-acc::after {
+  content: "@esb";
+  position: absolute;
+  z-index: 1;
+  top: 12px;
+  right: 0;
+  width: 56px;
+  line-height: 24px;
+  font-family: Arial;
+  color: #ADADAD;
+}
+.login-wrap-small .lws-input.ico-pw::before {
+  background-image: url(../image/icon_lock_gray.png);
+}
+.login-wrap-small .lws-input.ico-code::before {
+  background-image: url(../image/icon_key_gray.png);
+}
+.login-wrap-small .lws-input.ico-code figure {
+  position: absolute;
+  z-index: 1;
+  top: 14px;
+  right: 5px;
+  width: 45px;
+  height: 20px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.login-wrap-small .lws-input.ico-code figure img {
+  display: block;
+  width: 100%;
+}
+.login-wrap-small .lws-close {
+  position: absolute;
+  z-index: 5;
+  top: 16px;
+  right: 20px;
+  width: 24px;
+  height: 24px;
+  text-indent: -9999px;
+  background: url(../image/icon_close2.png) center no-repeat;
+  background-size: 20px auto;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+/*DIALOG*/
+.dialog,
+.dialog-overlay {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.dialog {
+  position: fixed;
+  z-index: 10001;
+  pointer-events: none;
+}
+
+.dialog-overlay {
+  position: absolute;
+  z-index: 1;
+  background: url(../image/bg_black000_o7.png);
+  display: none;
+}
+
+.dialog-content {
+  position: relative;
+  z-index: 5;
+  margin: 10% auto 0;
+  max-width: 320px;
+  height: 570px;
+  display: none;
+  background: #FFF;
+}
+@media only screen and (max-width: 1024px) {
+  .dialog-content {
+    margin: 5% auto 0;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .dialog-content {
+    margin: auto;
+  }
+}
+
+.dialog-open .dialog-overlay {
+  display: block;
+  pointer-events: auto;
+}
+.dialog-open .dialog-content {
+  pointer-events: auto;
+}
+
+/*.dialog.dialog-open .dialog-content, .dialog.dialog-close .dialog-content {
+  -moz-animation-duration: 0.4s;
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  -moz-animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}*/
+.dialog.dialog-open .dialog-content {
+  display: block;
+}
+/*.dialog.dialog-close .dialog-content {
+  -moz-animation-name: anim-close;
+  -webkit-animation-name: anim-close;
+  animation-name: anim-close;
+}*/
+
+/*@-moz-keyframes anim-open {
+  0% {
+    opacity: 0;
+    -moz-transform: translate3d(0, -400px, 0);
+    transform: translate3d(0, -400px, 0);
+  }
+  100% {
+    opacity: 1;
+    -moz-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@-webkit-keyframes anim-open {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -400px, 0);
+    transform: translate3d(0, -400px, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes anim-open {
+  0% {
+    opacity: 0;
+    -moz-transform: translate3d(0, -400px, 0);
+    -ms-transform: translate3d(0, -400px, 0);
+    -webkit-transform: translate3d(0, -400px, 0);
+    transform: translate3d(0, -400px, 0);
+  }
+  100% {
+    opacity: 1;
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@-moz-keyframes anim-close {
+  0% {
+    opacity: 1;
+    -moz-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    opacity: 0;
+    -moz-transform: translate3d(0, 100px, 0);
+    transform: translate3d(0, 100px, 0);
+  }
+}
+@-webkit-keyframes anim-close {
+  0% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100px, 0);
+    transform: translate3d(0, 100px, 0);
+  }
+}
+@keyframes anim-close {
+  0% {
+    opacity: 1;
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    opacity: 0;
+    -moz-transform: translate3d(0, 100px, 0);
+    -ms-transform: translate3d(0, 100px, 0);
+    -webkit-transform: translate3d(0, 100px, 0);
+    transform: translate3d(0, 100px, 0);
+  }
+}*/

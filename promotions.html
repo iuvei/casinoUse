@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html class="index">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+	<title>BBIN</title>
+	<!-- <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon" />
+	-->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/promotions.css">
+
+	<!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+	<script src="js/respond.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+	<div id="mainBody" class="wrap promotions">
+
+    <!-- HEADER -->
+    <div id="page-header" class="header">
+			<div class="header-c">
+				<div class="header-login">
+					<a id="login" class="icon icon-member" data-type="inline" href="#login-wrap"></a>
+					<span></span>
+				</div>
+				<div class="header-logo">
+					<a href="index.html" class="logo-img">
+						<img src="image/logo_bbin.png" />
+					</a>
+				</div>
+				<div class="header-nav">
+					<a href="#" id="menu" class="icon icon-nav"></a>
+				</div>
+				<div class="header-menu">
+					<ul class="menu">
+						<li><a href="index.html">首页</a></li>
+            <li class="drop">
+							<a href="#">体育赛事<i class="icon icon-arrow-down"></i></a>
+							<ul class="menu-sec">
+								<li class="first-child"><a href="sport-bb.html">BB体育</a></li>
+								<li><a href="#0">体育投注</a></li>
+								<li class="last-child"><a href="#0">SB体育</a></li>
+							</ul>
+						</li>
+						<li><a href="livecasino.html">视讯直播</a></li>
+						<li class="drop">
+							<a href="#">电子游艺<i class="icon icon-arrow-down"></i></a>
+							<ul class="menu-sec">
+                <li class="first-child"><a href="casino-bbin.html">BB电子</a></li>
+								<li><a href="casino-mg.html">MG电子</a></li>
+								<li class="last-child"><a href="#0">GNS电子</a></li>
+							</ul>
+						</li>
+						<li><a href="lottery.html">彩票游戏</a></li>
+						<li><a href="promotions.html" class="active">优惠活动</a></li>
+					</ul>
+				</div>
+				<div class="header-lang">
+					<a id="lang" class="lang icon-cn" data-type="ajax" href="lang.html"></a>
+					<span></span>
+				</div>
+			</div>
+      <div class="container-function">
+        <div class="container-membar removeTextNodes">
+          <div class="input-ac">
+            <input type="text" placeholder="帐号">
+          </div>
+          <div class="input-pw">
+            <input type="text" placeholder="密码">
+          </div>
+          <div class="input-code">
+            <input type="text" placeholder="验证码">
+            <figure>
+              <img src="image/not-use/code.png">
+            </figure>
+          </div>
+          <div class="link removeTextNodes">
+            <a class="btn-login" href="index-login.html">登入</a>
+            <a class="btn-joinus" href="#0">注冊</a>
+          </div>
+        </div>
+      </div>
+		</div>
+
+    <!-- CONTAINER -->
+  	<div id="page-container" class="container">
+			<div id="page-body">
+
+				<div class="container-slider">
+					<div class="img" style="background-image: url(image/banner_promotions.jpg);"></div>
+					<figure class="pro">
+						<img src="image/lang/zh-cn/promotions_title.png" class="title">
+					</figure>
+				</div>
+				<div class="promotions-content">
+					<ul class="promotions-link removeTextNodes">
+						<li><a href="#0" class="filter active" data-filter="all">全部活动</a></li>
+						<li><a href="#0" class="filter" data-filter=".PT1">视讯直播</a></li>
+						<li><a href="#0" class="filter" data-filter=".PT2">体育赛事</a></li>
+						<li><a href="#0" class="filter" data-filter=".PT3">电子游艺</a></li>
+						<li><a href="#0" class="filter" data-filter=".PT4">彩票游戏</a></li>
+						<li class="last-child"><a href="#0" class="filter" data-filter=".PT5">小e专区</a></li>
+					</ul>
+					<ul id="proGridder" class="promotions-gridder removeTextNodes">
+						<li class="mix PT1 PT5">
+							<a href="#pro-view1" class="pro-view">
+								<img class="active" src="image/not-use/promotions_1.jpg">
+                <img src="image/not-use/promotions_1_sat0.jpg">
+								<hgroup>
+									<h2>【2016/07/28】</h2>
+									<h3>2016奥运之战 总奖高达600,000</h3>
+									<span><i>VIEW ALL</i></span>
+								</hgroup>
+							</a>
+						</li>
+						<li class="mix PT2 PT3">
+							<a href="#pro-view2" class="pro-view">
+                <img class="active" src="image/not-use/promotions_2.jpg" height="100%" and width="100%">
+                <img src="image/not-use/promotions_2_sat0.jpg">
+								<hgroup>
+									<h2>【2016/07/28】</h2>
+									<h3>移动设备嗨翻天 周末独享88,888</h3>
+									<span><i>VIEW ALL</i></span>
+								</hgroup>
+							</a>
+						</li>
+						<li class="mix PT1">
+							<a href="#pro-view3" class="pro-view">
+                <img class="active" src="image/not-use/promotions_3.jpg">
+                <img src="image/not-use/promotions_3_sat0.jpg">
+								<hgroup>
+									<h2>【2016/07/20】</h2>
+									<h3>电子好运金 幸运加乘5%</h3>
+									<span><i>VIEW ALL</i></span>
+								</hgroup>
+							</a>
+						</li>
+						<li class="mix PT1 PT4">
+							<a href="#pro-view4" class="pro-view">
+								<img class="active" src="image/not-use/promotions_4.jpg">
+                <img src="image/not-use/promotions_4_sat0.jpg">
+								<hgroup>
+									<h2>【2016/07/20】</h2>
+									<h3>发财啦～1元以上 返点1.5%无上限</h3>
+									<span><i>VIEW ALL</i></span>
+								</hgroup>
+							</a>
+						</li>
+						<li class="mix PT3">
+							<a href="#pro-view5" class="pro-view">
+								<img class="active" src="image/not-use/promotions_5.jpg">
+                <img src="image/not-use/promotions_5_sat0.jpg">
+								<hgroup>
+									<h2>【2016/06/15】</h2>
+									<h3>e世博赌神赛 月月奖金100万</h3>
+									<span><i>VIEW ALL</i></span>
+								</hgroup>
+							</a>
+						</li>
+						<li class="mix PT1 PT2 PT5">
+							<a href="#pro-view6" class="pro-view">
+                <img class="active" src="image/not-use/promotions_6.jpg">
+                <img src="image/not-use/promotions_6_sat0.jpg">
+								<hgroup>
+									<h2>【2016/06/15】</h2>
+									<h3>赌神桌限定NB值再加码</h3>
+									<span><i>VIEW ALL</i></span>
+								</hgroup>
+							</a>
+						</li>
+					</ul>
+					<div class="btn-top-pro"></div>
+				</div>
+				<!--優惠內容 START-->
+				<div class="pro-overlay" id="pro-view1">
+					<a href="#mainBody" class="pro-close"></a>
+					<div class="pro-text">
+						<div class="pro-text-main">
+							<div class="pro-text-banner">
+								<img src="image/not-use/promotions_7.jpg">
+								<a href="#pro-view6" class="prev"></a>
+								<a href="#pro-view2" class="next"></a>
+							</div>
+							<section>
+								<h2>【2016/07/28】</h2>
+								<h3>2016奥运之战 总奖高达600,000</h3>
+								<p>活动对象：e世博全体会员。</p>
+								<p>活动时间：北京时间2016/8/01(一)中午12点-北京时间2016/9/05(一)中午12点，共5周。</p>
+								<p>活动内容：凡esball会员于活动期间内，于电子游艺项目投注，每周依照下表周有效投注门坎且周盈利为负，则依照下表加码回馈会员好运金最高1,888元(损益绝对值x回馈%=回馈奖金，小数点无条件进位至个位数)。</p>
+								<br>
+								<br>
+								<div class="table-1">
+									<table>
+										<tbody>
+											<tr class="first-child">
+												<td>电子游艺周总有效投注</td>
+												<td>好运金回馈%</td>
+											</tr>
+											<tr class="even">
+												<td>10,000,000+</td>
+												<td>5%</td>
+											</tr>
+											<tr>
+												<td>1,000,000+</td>
+												<td>3%</td>
+											</tr>
+											<tr class="even">
+												<td>100,000+</td>
+												<td>2%</td>
+											</tr>
+											<tr>
+												<td>1,000+</td>
+												<td>2%</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<br>
+								<br>
+								<p>【范例说明】</p>
+								<br>
+								<div class="table-2">
+									<table>
+										<tbody>
+											<tr class="first-child">
+												<td>会员</td>
+												<td>电子周有效投注</td>
+												<td>周损益</td>
+												<td>好运金回馈%</td>
+												<td>奖金</td>
+											</tr>
+											<tr class="even">
+												<td>A会员</td>
+												<td>10,500,000</td>
+												<td>-50,000</td>
+												<td>5%</td>
+												<td>1,888</td>
+											</tr>
+											<tr>
+												<td>B会员</td>
+												<td>50,000</td>
+												<td>-5,018</td>
+												<td>1%</td>
+												<td>51</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<br>
+								<ul class="ul-dot">
+		                    		<li>A会员电子类周有效投注达10,500,000，好运金回馈比为5%，│-50,000│x5%=2,500，则A会员可获得1,888元奖金(奖金最高为1,888)。</li>
+		                    		<li>B会员会员电子类周有效投注达50,000，好运金回馈比为1%，│-5018│x1%=50.18，则B会员可获得51元奖金（小数点无条件进位至个位数）。</li>
+								</ul>
+								<br>
+								<br>
+								<p>【注意事项】</p>
+								<ul class="ul-number">
+		                    		<li>奖金无须申请，得奖会员将以站内信通知，每周三下午6点前打入会员账号，奖金可使用于e世博任何游戏，打满3倍即可提款。</li>
+		                    		<li>电子游艺，包含【BB电子】、【3D电子】、【GNS电子】及【MG电子】的有效投注。</li>
+		                    		<li>机率游戏下注金额会依照「游戏」不同纳入四层彩金，总有效投注将以「实际有效下注金额」为主。</li>
+		                    		<li>此优惠活动只适用于同一位会员，同一个IP位置，任何无风险投注将视为无效。</li>
+		                    		<li>任何团体或个人，以不诚实方式套取红利、图利的行为，账号及账户余额将被取消。</li>
+		                    		<li>每周有效投注计算时间为北京时间周一中午12点到隔周一中午12点，资格总有效投注以美东时间为依据。</li>
+		                    		<li>e世博保有本活动执行、修正、解释及终止等权力。</li>
+								</ul>
+							</section>
+						</div>
+						<div class="pro-nav removeTextNodes">
+							<a href="#pro-view6" class="prev">prev</a>
+							<a href="#pro-view2" class="next">next</a>
+						</div>
+					</div>
+					<div class="btn-top-pro"></div>
+				</div>
+				<div class="pro-overlay" id="pro-view2">
+					<a href="#mainBody" class="pro-close"></a>
+					<div class="pro-text">
+						<div class="pro-text-main">
+							<div class="pro-text-banner">
+								<img src="image/not-use/promotions_7.jpg">
+								<a href="#pro-view1" class="prev"></a>
+								<a href="#pro-view3" class="next"></a>
+							</div>
+							<section>
+								<h2>【2016/07/28】</h2>
+								<h3>移动设备嗨翻天 周末独享88,888</h3>
+								<p>活动对象：e世博全体会员。</p>
+								<p>活动时间：北京时间2016/8/01(一)中午12点-北京时间2016/9/05(一)中午12点，共5周。</p>
+								<p>活动内容：凡esball会员于活动期间内，于电子游艺项目投注，每周依照下表周有效投注门坎且周盈利为负，则依照下表加码回馈会员好运金最高1,888元(损益绝对值x回馈%=回馈奖金，小数点无条件进位至个位数)。</p>
+								<br>
+								<br>
+								<div class="table-1">
+									<table>
+										<tbody>
+											<tr class="first-child">
+												<td>电子游艺周总有效投注</td>
+												<td>好运金回馈%</td>
+											</tr>
+											<tr class="even">
+												<td>10,000,000+</td>
+												<td>5%</td>
+											</tr>
+											<tr>
+												<td>1,000,000+</td>
+												<td>3%</td>
+											</tr>
+											<tr class="even">
+												<td>100,000+</td>
+												<td>2%</td>
+											</tr>
+											<tr>
+												<td>1,000+</td>
+												<td>2%</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<br>
+								<br>
+								<p>【范例说明】</p>
+								<br>
+								<div class="table-2">
+									<table>
+										<tbody>
+											<tr class="first-child">
+												<td>会员</td>
+												<td>电子周有效投注</td>
+												<td>周损益</td>
+												<td>好运金回馈%</td>
+												<td>奖金</td>
+											</tr>
+											<tr class="even">
+												<td>A会员</td>
+												<td>10,500,000</td>
+												<td>-50,000</td>
+												<td>5%</td>
+												<td>1,888</td>
+											</tr>
+											<tr>
+												<td>B会员</td>
+												<td>50,000</td>
+												<td>-5,018</td>
+												<td>1%</td>
+												<td>51</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<br>
+								<ul class="ul-dot">
+		                    		<li>A会员电子类周有效投注达10,500,000，好运金回馈比为5%，│-50,000│x5%=2,500，则A会员可获得1,888元奖金(奖金最高为1,888)。</li>
+		                    		<li>B会员会员电子类周有效投注达50,000，好运金回馈比为1%，│-5018│x1%=50.18，则B会员可获得51元奖金（小数点无条件进位至个位数）。</li>
+								</ul>
+								<br>
+								<br>
+								<p>【注意事项】</p>
+								<ul class="ul-number">
+		                    		<li>奖金无须申请，得奖会员将以站内信通知，每周三下午6点前打入会员账号，奖金可使用于e世博任何游戏，打满3倍即可提款。</li>
+		                    		<li>电子游艺，包含【BB电子】、【3D电子】、【GNS电子】及【MG电子】的有效投注。</li>
+		                    		<li>机率游戏下注金额会依照「游戏」不同纳入四层彩金，总有效投注将以「实际有效下注金额」为主。</li>
+		                    		<li>此优惠活动只适用于同一位会员，同一个IP位置，任何无风险投注将视为无效。</li>
+		                    		<li>任何团体或个人，以不诚实方式套取红利、图利的行为，账号及账户余额将被取消。</li>
+		                    		<li>每周有效投注计算时间为北京时间周一中午12点到隔周一中午12点，资格总有效投注以美东时间为依据。</li>
+		                    		<li>e世博保有本活动执行、修正、解释及终止等权力。</li>
+								</ul>
+							</section>
+						</div>
+						<div class="pro-nav removeTextNodes">
+							<a href="#pro-view1" class="prev">prev</a>
+							<a href="#pro-view3" class="next">next</a>
+						</div>
+					</div>
+					<div class="btn-top-pro"></div>
+				</div>
+				<div class="pro-overlay" id="pro-view3">
+					<a href="#mainBody" class="pro-close"></a>
+					<div class="pro-text">
+						<div class="pro-text-main">
+							<div class="pro-text-banner">
+								<img src="image/not-use/promotions_7.jpg">
+								<a href="#pro-view2" class="prev"></a>
+								<a href="#pro-view4" class="next"></a>
+							</div>
+							<section>
+								<h2>【2016/07/20】</h2>
+								<h3>电子好运金 幸运加乘5%</h3>
+								<p>活动对象：e世博全体会员。</p>
+								<p>活动时间：北京时间2016/8/01(一)中午12点-北京时间2016/9/05(一)中午12点，共5周。</p>
+								<p>活动内容：凡esball会员于活动期间内，于电子游艺项目投注，每周依照下表周有效投注门坎且周盈利为负，则依照下表加码回馈会员好运金最高1,888元(损益绝对值x回馈%=回馈奖金，小数点无条件进位至个位数)。</p>
+								<br>
+								<br>
+								<div class="table-1">
+									<table>
+										<tbody>
+											<tr class="first-child">
+												<td>电子游艺周总有效投注</td>
+												<td>好运金回馈%</td>
+											</tr>
+											<tr class="even">
+												<td>10,000,000+</td>
+												<td>5%</td>
+											</tr>
+											<tr>
+												<td>1,000,000+</td>
+												<td>3%</td>
+											</tr>
+											<tr class="even">
+												<td>100,000+</td>
+												<td>2%</td>
+											</tr>
+											<tr>
+												<td>1,000+</td>
+												<td>2%</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<br>
+								<br>
+								<p>【范例说明】</p>
+								<br>
+								<div class="table-2">
+									<table>
+										<tbody>
+											<tr class="first-child">
+												<td>会员</td>
+												<td>电子周有效投注</td>
+												<td>周损益</td>
+												<td>好运金回馈%</td>
+												<td>奖金</td>
+											</tr>
+											<tr class="even">
+												<td>A会员</td>
+												<td>10,500,000</td>
+												<td>-50,000</td>
+												<td>5%</td>
+												<td>1,888</td>
+											</tr>
+											<tr>
+												<td>B会员</td>
+												<td>50,000</td>
+												<td>-5,018</td>
+												<td>1%</td>
+												<td>51</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<br>
+								<ul class="ul-dot">
+		                    		<li>A会员电子类周有效投注达10,500,000，好运金回馈比为5%，│-50,000│x5%=2,500，则A会员可获得1,888元奖金(奖金最高为1,888)。</li>
+		                    		<li>B会员会员电子类周有效投注达50,000，好运金回馈比为1%，│-5018│x1%=50.18，则B会员可获得51元奖金（小数点无条件进位至个位数）。</li>
+								</ul>
+								<br>
+								<br>
+								<p>【注意事项】</p>
+								<ul class="ul-number">
+		                    		<li>奖金无须申请，得奖会员将以站内信通知，每周三下午6点前打入会员账号，奖金可使用于e世博任何游戏，打满3倍即可提款。</li>
+		                    		<li>电子游艺，包含【BB电子】、【3D电子】、【GNS电子】及【MG电子】的有效投注。</li>
+		                    		<li>机率游戏下注金额会依照「游戏」不同纳入四层彩金，总有效投注将以「实际有效下注金额」为主。</li>
+		                    		<li>此优惠活动只适用于同一位会员，同一个IP位置，任何无风险投注将视为无效。</li>
+		                    		<li>任何团体或个人，以不诚实方式套取红利、图利的行为，账号及账户余额将被取消。</li>
+		                    		<li>每周有效投注计算时间为北京时间周一中午12点到隔周一中午12点，资格总有效投注以美东时间为依据。</li>
+		                    		<li>e世博保有本活动执行、修正、解释及终止等权力。</li>
+								</ul>
+							</section>
+						</div>
+						<div class="pro-nav removeTextNodes">
+							<a href="#pro-view2" class="prev">prev</a>
+							<a href="#pro-view4" class="next">next</a>
+						</div>
+					</div>
+					<div class="btn-top-pro"></div>
+				</div>
+				<div class="pro-overlay" id="pro-view4">
+					<a href="#mainBody" class="pro-close"></a>
+					<div class="pro-text">
+						<div class="pro-text-main">
+							<div class="pro-text-banner">
+								<img src="image/not-use/promotions_7.jpg">
+								<a href="#pro-view3" class="prev"></a>
+								<a href="#pro-view5" class="next"></a>
+							</div>
+							<section>
+								<h2>【2016/07/20】</h2>
+								<h3>发财啦～1元以上 返点1.5%无上限</h3>
+								<p>活动对象：e世博全体会员。</p>
+								<p>活动时间：北京时间2016/8/01(一)中午12点-北京时间2016/9/05(一)中午12点，共5周。</p>
+								<p>活动内容：凡esball会员于活动期间内，于电子游艺项目投注，每周依照下表周有效投注门坎且周盈利为负，则依照下表加码回馈会员好运金最高1,888元(损益绝对值x回馈%=回馈奖金，小数点无条件进位至个位数)。</p>
+								<br>
+								<br>
+								<div class="table-1">
+									<table>
+										<tbody>
+											<tr class="first-child">
+												<td>电子游艺周总有效投注</td>
+												<td>好运金回馈%</td>
+											</tr>
+											<tr class="even">
+												<td>10,000,000+</td>
+												<td>5%</td>
+											</tr>
+											<tr>
+												<td>1,000,000+</td>
+												<td>3%</td>
+											</tr>
+											<tr class="even">
+												<td>100,000+</td>
+												<td>2%</td>
+											</tr>
+											<tr>
+												<td>1,000+</td>
+												<td>2%</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<br>
+								<br>
+								<p>【范例说明】</p>
+								<br>
+								<div class="table-2">
+									<table>
+										<tbody>
+											<tr class="first-child">
+												<td>会员</td>
+												<td>电子周有效投注</td>
+												<td>周损益</td>
+												<td>好运金回馈%</td>
+												<td>奖金</td>
+											</tr>
+											<tr class="even">
+												<td>A会员</td>
+												<td>-50,000</td>
+												<td>5%</td>
+												<td>1,888</td>
+											</tr>
+											<tr>
+												<td>B会员</td>
+												<td>50,000</td>
+												<td>-5,018</td>
+												<td>1%</td>
+												<td>51</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<br>
+								<ul class="ul-dot">
+		                    		<li>A会员电子类周有效投注达10,500,000，好运金回馈比为5%，│-50,000│x5%=2,500，则A会员可获得1,888元奖金(奖金最高为1,888)。</li>
+		                    		<li>B会员会员电子类周有效投注达50,000，好运金回馈比为1%，│-5018│x1%=50.18，则B会员可获得51元奖金（小数点无条件进位至个位数）。</li>
+								</ul>
+								<br>
+								<br>
+								<p>【注意事项】</p>
+								<ul class="ul-number">
+		                    		<li>奖金无须申请，得奖会员将以站内信通知，每周三下午6点前打入会员账号，奖金可使用于e世博任何游戏，打满3倍即可提款。</li>
+		                    		<li>电子游艺，包含【BB电子】、【3D电子】、【GNS电子】及【MG电子】的有效投注。</li>
+		                    		<li>机率游戏下注金额会依照「游戏」不同纳入四层彩金，总有效投注将以「实际有效下注金额」为主。</li>
+		                    		<li>此优惠活动只适用于同一位会员，同一个IP位置，任何无风险投注将视为无效。</li>
+		                    		<li>任何团体或个人，以不诚实方式套取红利、图利的行为，账号及账户余额将被取消。</li>
+		                    		<li>每周有效投注计算时间为北京时间周一中午12点到隔周一中午12点，资格总有效投注以美东时间为依据。</li>
+		                    		<li>e世博保有本活动执行、修正、解释及终止等权力。</li>
+								</ul>
+							</section>
+						</div>
+						<div class="pro-nav removeTextNodes">
+							<a href="#pro-view3" class="prev">prev</a>
+							<a href="#pro-view5" class="next">next</a>
+						</div>
+					</div>
+					<div class="btn-top-pro"></div>
+				</div>
+				<div class="pro-overlay" id="pro-view5">
+					<a href="#mainBody" class="pro-close"></a>
+					<div class="pro-text">
+						<div class="pro-text-main">
+							<div class="pro-text-banner">
+								<img src="image/not-use/promotions_7.jpg">
+								<a href="#pro-view4" class="prev"></a>
+								<a href="#pro-view6" class="next"></a>
+							</div>
+							<section>
+								<h2>【2016/06/15】</h2>
+								<h3>e世博赌神赛 月月奖金100万</h3>
+								<p>活动对象：e世博全体会员。</p>
+								<p>活动时间：北京时间2016/8/01(一)中午12点-北京时间2016/9/05(一)中午12点，共5周。</p>
+								<p>活动内容：凡esball会员于活动期间内，于电子游艺项目投注，每周依照下表周有效投注门坎且周盈利为负，则依照下表加码回馈会员好运金最高1,888元(损益绝对值x回馈%=回馈奖金，小数点无条件进位至个位数)。</p>
+								<br>
+								<br>
+								<div class="table-1">
+									<table>
+										<tbody>
+											<tr class="first-child">
+												<td>电子游艺周总有效投注</td>
+												<td>好运金回馈%</td>
+											</tr>
+											<tr class="even">
+												<td>10,000,000+</td>
+												<td>5%</td>
+											</tr>
+											<tr>
+												<td>1,000,000+</td>
+												<td>3%</td>
+											</tr>
+											<tr class="even">
+												<td>100,000+</td>
+												<td>2%</td>
+											</tr>
+											<tr>
+												<td>1,000+</td>
+												<td>2%</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<br>
+								<br>
+								<p>【范例说明】</p>
+								<br>
+								<div class="table-2">
+									<table>
+										<tbody>
+											<tr class="first-child">
+												<td>会员</td>
+												<td>电子周有效投注</td>
+												<td>周损益</td>
+												<td>好运金回馈%</td>
+												<td>奖金</td>
+											</tr>
+											<tr class="even">
+												<td>A会员</td>
+												<td>10,500,000</td>
+												<td>-50,000</td>
+												<td>5%</td>
+												<td>1,888</td>
+											</tr>
+											<tr>
+												<td>B会员</td>
+												<td>50,000</td>
+												<td>-5,018</td>
+												<td>1%</td>
+												<td>51</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<br>
+								<ul class="ul-dot">
+		                    		<li>A会员电子类周有效投注达10,500,000，好运金回馈比为5%，│-50,000│x5%=2,500，则A会员可获得1,888元奖金(奖金最高为1,888)。</li>
+		                    		<li>B会员会员电子类周有效投注达50,000，好运金回馈比为1%，│-5018│x1%=50.18，则B会员可获得51元奖金（小数点无条件进位至个位数）。</li>
+								</ul>
+								<br>
+								<br>
+								<p>【注意事项】</p>
+								<ul class="ul-number">
+		                    		<li>奖金无须申请，得奖会员将以站内信通知，每周三下午6点前打入会员账号，奖金可使用于e世博任何游戏，打满3倍即可提款。</li>
+		                    		<li>电子游艺，包含【BB电子】、【3D电子】、【GNS电子】及【MG电子】的有效投注。</li>
+		                    		<li>机率游戏下注金额会依照「游戏」不同纳入四层彩金，总有效投注将以「实际有效下注金额」为主。</li>
+		                    		<li>此优惠活动只适用于同一位会员，同一个IP位置，任何无风险投注将视为无效。</li>
+		                    		<li>任何团体或个人，以不诚实方式套取红利、图利的行为，账号及账户余额将被取消。</li>
+		                    		<li>每周有效投注计算时间为北京时间周一中午12点到隔周一中午12点，资格总有效投注以美东时间为依据。</li>
+		                    		<li>e世博保有本活动执行、修正、解释及终止等权力。</li>
+								</ul>
+							</section>
+						</div>
+						<div class="pro-nav removeTextNodes">
+							<a href="#pro-view4" class="prev">prev</a>
+							<a href="#pro-view6" class="next">next</a>
+						</div>
+					</div>
+					<div class="btn-top-pro"></div>
+				</div>
+				<div class="pro-overlay" id="pro-view6">
+					<a href="#mainBody" class="pro-close"></a>
+					<div class="pro-text">
+						<div class="pro-text-main">
+							<div class="pro-text-banner">
+								<img src="image/not-use/promotions_7.jpg">
+								<a href="#pro-view5" class="prev"></a>
+								<a href="#pro-view1" class="next"></a>
+							</div>
+							<section>
+								<h2>【2016/06/15】</h2>
+								<h3>赌神桌限定NB值再加码</h3>
+								<p>活动对象：e世博全体会员。</p>
+								<p>活动时间：北京时间2016/8/01(一)中午12点-北京时间2016/9/05(一)中午12点，共5周。</p>
+								<p>活动内容：凡esball会员于活动期间内，于电子游艺项目投注，每周依照下表周有效投注门坎且周盈利为负，则依照下表加码回馈会员好运金最高1,888元(损益绝对值x回馈%=回馈奖金，小数点无条件进位至个位数)。</p>
+								<br>
+								<br>
+								<div class="table-1">
+									<table>
+										<tbody>
+											<tr class="first-child">
+												<td>电子游艺周总有效投注</td>
+												<td>好运金回馈%</td>
+											</tr>
+											<tr class="even">
+												<td>10,000,000+</td>
+												<td>5%</td>
+											</tr>
+											<tr>
+												<td>1,000,000+</td>
+												<td>3%</td>
+											</tr>
+											<tr class="even">
+												<td>100,000+</td>
+												<td>2%</td>
+											</tr>
+											<tr>
+												<td>1,000+</td>
+												<td>2%</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<br>
+								<br>
+								<p>【范例说明】</p>
+								<br>
+								<div class="table-2">
+									<table>
+										<tbody>
+											<tr class="first-child">
+												<td>会员</td>
+												<td>电子周有效投注</td>
+												<td>周损益</td>
+												<td>好运金回馈%</td>
+												<td>奖金</td>
+											</tr>
+											<tr class="even">
+												<td>A会员</td>
+												<td>10,500,000</td>
+												<td>-50,000</td>
+												<td>5%</td>
+												<td>1,888</td>
+											</tr>
+											<tr>
+												<td>B会员</td>
+												<td>50,000</td>
+												<td>-5,018</td>
+												<td>1%</td>
+												<td>51</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<br>
+								<ul class="ul-dot">
+		                    		<li>A会员电子类周有效投注达10,500,000，好运金回馈比为5%，│-50,000│x5%=2,500，则A会员可获得1,888元奖金(奖金最高为1,888)。</li>
+		                    		<li>B会员会员电子类周有效投注达50,000，好运金回馈比为1%，│-5018│x1%=50.18，则B会员可获得51元奖金（小数点无条件进位至个位数）。</li>
+								</ul>
+								<br>
+								<br>
+								<p>【注意事项】</p>
+								<ul class="ul-number">
+		                    		<li>奖金无须申请，得奖会员将以站内信通知，每周三下午6点前打入会员账号，奖金可使用于e世博任何游戏，打满3倍即可提款。</li>
+		                    		<li>电子游艺，包含【BB电子】、【3D电子】、【GNS电子】及【MG电子】的有效投注。</li>
+		                    		<li>机率游戏下注金额会依照「游戏」不同纳入四层彩金，总有效投注将以「实际有效下注金额」为主。</li>
+		                    		<li>此优惠活动只适用于同一位会员，同一个IP位置，任何无风险投注将视为无效。</li>
+		                    		<li>任何团体或个人，以不诚实方式套取红利、图利的行为，账号及账户余额将被取消。</li>
+		                    		<li>每周有效投注计算时间为北京时间周一中午12点到隔周一中午12点，资格总有效投注以美东时间为依据。</li>
+		                    		<li>e世博保有本活动执行、修正、解释及终止等权力。</li>
+								</ul>
+							</section>
+						</div>
+						<div class="pro-nav removeTextNodes">
+							<a href="#pro-view5" class="prev">prev</a>
+							<a href="#pro-view1" class="next">next</a>
+						</div>
+					</div>
+					<div class="btn-top-pro"></div>
+				</div>
+				<!--優惠內容 END-->
+			</div>
+
+		</div>
+
+    <!-- FOORTER -->
+    <div id="page-footer" class="footer">
+      <div class="footer-c">
+        <div class="footer-links">
+          <div class="links-box">
+            <div class="ttl">相关连结</div>
+            <a href="#0">关于BBIN</a>
+            <a href="#0">BBIN技术</a>
+            <a href="#0">协议与规则</a>
+            <a href="#0">合作伙伴</a>
+            <a href="#0">寰宇浏览器</a>
+          </div>
+          <div class="links-box">
+            <div class="ttl">需要帮助吗？</div>
+            <a href="contact.html">联络我们</a>
+            <a href="#0">常见问题</a>
+            <a href="#0">存/取款帮助</a>
+            <a href="#0">下载区</a>
+            <a href="#0">诺顿分级-安全网站</a>
+          </div>
+        </div>
+        <div class="footer-pay">
+          <ul>
+            <li>
+              <a href="#0">
+                <figure>
+                  <img src="image/footer_logo_weixin.png">
+                  <figcaption>微信支付</figcaption>
+                </figure>
+              </a>
+            </li>
+            <li>
+              <a href="#0">
+                <figure>
+                  <img src="image/footer_logo_alipay.png">
+                  <figcaption>支付宝</figcaption>
+                </figure>
+              </a>
+            </li>
+            <li>
+              <a href="#0">
+                <figure>
+                  <img src="image/footer_logo_mobile.png">
+                  <figcaption>手机支付</figcaption>
+                </figure>
+              </a>
+            </li>
+            <li>
+              <a href="#0">
+                <figure>
+                  <img src="image/footer_logo_neteller.png">
+                  <figcaption>NETELLER</figcaption>
+                </figure>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-line"></div>
+      <div class="footer-infor">
+        <div class="footer-copyright">
+          <p class="copyright">
+            2016 Copyright ©
+            <a href="">BBIN</a>
+            Reserved.
+          </p>
+          <p class="warn">如遇网页无法显示或出现错误，推荐其用户微软升级至IE10以上版本或下载其他浏览器享受更好的浏览品质。</p>
+        </div>
+        <div class="footer-glc">
+          <img src="image/logo_glc.png">
+        </div>
+      </div>
+    </div>
+
+	</div>
+
+	<!--會員登入視窗-->
+	<div id="login-wrap" style="display:none;">
+		<div class="login-wrap">
+		    <div class="login-main">
+				<ul>
+					<li><input type="text" placeholder="帐号"></li>
+					<li><input type="text" placeholder="密码"></li>
+					<li>
+						<input type="text" placeholder="验证码">
+						<figure><img src="image/not-use/code2.png"></figure>
+					</li>
+				</ul>
+				<a href="#0" class="login-forget">忘记密码？</a>
+				<div class="login-button">
+					<button class="login" onclick="location.href='index-login.html'">登入</button>
+					<button class="register">注册</button>
+				</div>
+		    </div>
+	    </div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/jquery-2.2.3.js"><\/script>')</script>
+	<script src="js/nicescroll.js"></script>
+	<script src="js/mob-menu.js"></script>
+	<script src="js/venobox.js"></script>
+	<script src='js/jquery.mixitup.min.js'></script>
+	<script src="js/mixitup-script.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/promotions.js"></script>
+
+</body>
+</html>

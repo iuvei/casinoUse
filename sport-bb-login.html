@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html class="index">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <title>BBIN</title>
+  <!-- <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon" />
+  -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/sport.css">
+
+  <!--[if lt IE 9]>
+  <script src="js/html5shiv.js"></script>
+  <script src="js/respond.js"></script>
+  <![endif]-->
+  <script src="js/modernizr.custom.js"></script>
+
+</head>
+<body>
+  <div id="mainBody" class="wrap sport">
+
+    <!-- HEADER -->
+    <div id="page-header" class="header">
+      <div class="header-c">
+        <div class="header-login">
+          <a id="login" class="icon icon-member" data-type="inline" href="#login-wrap"></a>
+          <span></span>
+        </div>
+        <div class="header-logo">
+          <a href="index.html" class="logo-img">
+            <img src="image/logo_bbin.png" />
+          </a>
+        </div>
+        <div class="header-nav">
+          <a href="#" id="menu" class="icon icon-nav"></a>
+        </div>
+        <div class="header-menu">
+          <ul class="menu">
+            <li><a href="index.html">首页</a></li>
+            <li class="drop">
+              <a href="#">体育赛事<i class="icon icon-arrow-down"></i></a>
+              <ul class="menu-sec">
+                <li class="first-child"><a href="casino-bbin.html">BB电子</a></li>
+                <li><a href="casino-mg.html">MG电子</a></li>
+                <li class="last-child"><a href="#0">SB体育</a></li>
+              </ul>
+            </li>
+            <li><a href="livecasino.html">视讯直播</a></li>
+            <li class="drop">
+              <a href="#">电子游艺<i class="icon icon-arrow-down"></i></a>
+              <ul class="menu-sec">
+                <li class="first-child"><a href="#0">BB电子</a></li>
+                <li><a href="#0">MG电子</a></li>
+                <li class="last-child"><a href="#0">GNS电子</a></li>
+              </ul>
+            </li>
+            <li><a href="lottery.html">彩票游戏</a></li>
+            <li><a href="promotions.html">优惠活动</a></li>
+          </ul>
+        </div>
+        <div class="header-lang">
+          <a id="lang" class="lang icon-cn" data-type="ajax" href="lang.html"></a>
+          <span></span>
+        </div>
+      </div>
+      <div class="container-function">
+        <div class="container-membar removeTextNodes">
+          <div class="login removeTextNodes">
+            <a href="#0">会员中心</a>
+            <a href="#0">线上存款</a>
+            <a href="#0">线上取款</a>
+            <a href="#0">额度转换</a>
+            <a class="last-child" href="#0">投注余额</a>
+            <!-- <a class="last-child" href="#0">未读讯息 ( <span>1</span> )</a> -->
+          </div>
+          <div class="member removeTextNodes">
+            <span>帳號：artweb2</span>
+            <span>BBIN 餘額：0</span>
+            <i class="ico-plus"></i>
+          </div>
+          <div class="link removeTextNodes">
+            <a href="index.html">登出</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONTAINER -->
+    <div id="page-container" class="container">
+      <div id="page-body">
+
+        <div class="sport-wrap">
+          <div class="sport-top">
+            <div class="sport-est-time">
+              美东时间：<span id="js-est-reciprocal"></span>
+            </div>
+            <div class="sport-top-menu">
+              <ul>
+                <li class="ts">
+                  <a href="#0"><span>今日足球</span></a>
+                </li>
+                <li class="tb">
+                  <a href="#0"><span>今日篮球</span></a>
+                </li>
+                <li class="parlay">
+                  <a href="#0"><span>过关</span></a>
+                </li>
+                <li class="champion">
+                  <a href="#0"><span>冠军</span></a>
+                </li>
+              </ul>
+            </div>
+            <div class="sport-top-wagers">
+              <span class="title">交易纪录</span>
+              <section>
+                <article class="first-child">
+                  <hgroup>
+                    <h2>未結算注單</h2>
+                    <h3>
+                      <span class="num">06</span><span class="unit">张</span>
+                    </h3>
+                  </hgroup>
+                  <a href="#0">点击观看</a>
+                </article>
+                <article>
+                  <hgroup>
+                    <h2>已結算注單</h2>
+                    <h3>
+                      <span class="num">54</span><span class="unit">张</span>
+                    </h3>
+                  </hgroup>
+                  <a href="#0">点击观看</a>
+                </article>
+              </section>
+            </div>
+          </div>
+          <div class="sport-game">
+            <div class="sport-game-rolling" id="sportGameBox1">
+              <div class="sport-game-wall">
+                <div class="sport-game-title">
+                  <div class="sport-game-icon FT"></div>
+                  <span>滚球</span>
+                  <span class="live">LIVE</span>
+                </div>
+                <div class="sport-game-inner">
+                  <div class="sport-game-nogame">
+                    <span class="title">目前无滚球赛事</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sport-game-comming" id="sportGameBox2">
+              <div class="sport-game-wall">
+                <div class="sport-game-title">
+                  <div class="sport-game-icon BK"></div>
+                  <span>即将开赛</span>
+                </div>
+                <div class="sport-game-inner">
+                  <ul>
+                    <li>
+                      <div class="sport-game-box">
+                        <span class="sport-game-live-date">08-30</span>
+                        <span class="sport-game-live-time">18:00</span>
+                      </div>
+                      <div class="sport-game-content">
+                        <div class="sport-game-live-title">
+                          <h2>FIBA 欧洲篮球赛-(2017预选赛)</h2>
+                          <a href="#0">更多</a>
+                        </div>
+                        <div class="sport-game-live-versus">
+                          <span class="sport-game-live-team maker">
+                            <i class="sport-game-live-name">纽约自由人</i>
+                            <i class="sport-game-live-odds">0.830</i>
+                            <i class="sport-game-live-handicap">0/0.5</i>
+                          </span>
+                          <span class="sport-game-live-team">
+                            <i class="sport-game-live-name">西雅图暴风</i>
+                            <i class="sport-game-live-odds">0.970</i>
+                          </span>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="sport-game-box">
+                        <span class="sport-game-live-date">08-30</span>
+                        <span class="sport-game-live-time">19:30</span>
+                      </div>
+                      <div class="sport-game-content">
+                        <div class="sport-game-live-title">
+                          <h2>FIBA 欧洲篮球赛-(2017预选赛)</h2>
+                          <a href="#0">更多</a>
+                        </div>
+                        <div class="sport-game-live-versus">
+                          <span class="sport-game-live-team">
+                            <i class="sport-game-live-name">华盛顿奇异</i>
+                            <i class="sport-game-live-odds">0.830</i>
+                          </span>
+                          <span class="sport-game-live-team maker">
+                            <i class="sport-game-live-name">芝加哥天空</i>
+                            <i class="sport-game-live-odds">0.970</i>
+                            <i class="sport-game-live-handicap">0/0.5</i>
+                          </span>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="sport-game-box">
+                        <span class="sport-game-live-date">08-30</span>
+                        <span class="sport-game-live-time">20:00</span>
+                      </div>
+                      <div class="sport-game-content">
+                        <div class="sport-game-live-title">
+                          <h2>WNBA</h2>
+                          <a href="#0">更多</a>
+                        </div>
+                        <div class="sport-game-live-versus">
+                          <span class="sport-game-live-team maker">
+                            <i class="sport-game-live-name">纽约自由人</i>
+                            <i class="sport-game-live-odds">0.830</i>
+                            <i class="sport-game-live-handicap">0/0.5</i>
+                          </span>
+                          <span class="sport-game-live-team">
+                            <i class="sport-game-live-name">西雅图暴风</i>
+                            <i class="sport-game-live-odds">0.970</i>
+                          </span>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="sport-game-wall">
+                <div class="sport-game-title">
+                  <div class="sport-game-icon FT"></div>
+                  <span>即将开赛</span>
+                </div>
+                <div class="sport-game-inner">
+                  <ul>
+                    <li>
+                      <div class="sport-game-box">
+                        <span class="sport-game-live-date">08-30</span>
+                        <span class="sport-game-live-time">19:00</span>
+                      </div>
+                      <div class="sport-game-content">
+                        <div class="sport-game-live-title">
+                          <h2>意大利青年杯 U19</h2>
+                          <a href="#0">更多</a>
+                        </div>
+                        <div class="sport-game-live-versus">
+                          <span class="sport-game-live-team">
+                            <i class="sport-game-live-name">卡利亚里 U19</i>
+                            <i class="sport-game-live-odds">0.830</i>
+                          </span>
+                          <span class="sport-game-live-team maker">
+                            <i class="sport-game-live-name">维塞利 U19</i>
+                            <i class="sport-game-live-odds">0.970</i>
+                            <i class="sport-game-live-handicap">0/0.5</i>
+                          </span>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="sport-game-box">
+                        <span class="sport-game-live-date">08-30</span>
+                        <span class="sport-game-live-time">19:00</span>
+                      </div>
+                      <div class="sport-game-content">
+                        <div class="sport-game-live-title">
+                          <h2>意大利青年杯 U19</h2>
+                          <a href="#0">更多</a>
+                        </div>
+                        <div class="sport-game-live-versus">
+                          <span class="sport-game-live-team">
+                            <i class="sport-game-live-name">森多利亚 U19</i>
+                            <i class="sport-game-live-odds">0.830</i>
+                          </span>
+                          <span class="sport-game-live-team maker">
+                            <i class="sport-game-live-name">比斯卡拉 U19</i>
+                            <i class="sport-game-live-odds">0.970</i>
+                            <i class="sport-game-live-handicap">0/0.5</i>
+                          </span>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="sport-game-box">
+                        <span class="sport-game-live-date">08-30</span>
+                        <span class="sport-game-live-time">19:00</span>
+                      </div>
+                      <div class="sport-game-content">
+                        <div class="sport-game-live-title">
+                          <h2>意大利青年杯 U19</h2>
+                          <a href="#0">更多</a>
+                        </div>
+                        <div class="sport-game-live-versus">
+                          <span class="sport-game-live-team">
+                            <i class="sport-game-live-name">拉脱维亚 U19</i>
+                            <i class="sport-game-live-odds">0.830</i>
+                          </span>
+                          <span class="sport-game-live-team maker">
+                            <i class="sport-game-live-name">俄罗斯 U19</i>
+                            <i class="sport-game-live-odds">0.970</i>
+                            <i class="sport-game-live-handicap">0/0.5</i>
+                          </span>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sport-game">
+            <div class="sport-game-latest-resault">
+              <div class="sport-game-title">
+                <div class="sport-game-arrow"></div>
+                <span>最新赛果</span>
+              </div>
+              <ul class="sport-game-ticker">
+                <li>
+                  <div class="sport-game-list">
+                    <div class="sport-game-box">
+                      <span class="sport-game-live-date">8/14</span>
+                      <span class="sport-game-live-score">18:24</span>
+                    </div>
+                    <div class="sport-game-content">
+                      <div class="sport-game-live-title">
+                        <h3>阿斯塔纳挑战赛阿斯塔纳挑战赛(男子组)</h3>
+                      </div>
+                      <div class="sport-game-live-versus">
+                        <span class="sport-game-live-team">米琪 扬科维奇 [Miki Jankovic]</span>
+                        <span class="sport-game-live-team">安东 查伊采夫 [Anton Zaitcev]</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="sport-game-list">
+                    <div class="sport-game-box">
+                      <span class="sport-game-live-date">8/14</span>
+                      <span class="sport-game-live-score">18:24</span>
+                    </div>
+                    <div class="sport-game-content">
+                      <div class="sport-game-live-title">
+                        <h3>阿斯塔纳挑战赛阿斯塔纳挑战赛(男子组)</h3>
+                      </div>
+                      <div class="sport-game-live-versus">
+                        <span class="sport-game-live-team">米琪 扬科维奇 [Miki Jankovic]</span>
+                        <span class="sport-game-live-team">安东 查伊采夫 [Anton Zaitcev]</span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="sport-game-list">
+                    <div class="sport-game-box">
+                      <span class="sport-game-live-date">8/14</span>
+                      <span class="sport-game-live-score">2:1</span>
+                    </div>
+                    <div class="sport-game-content">
+                      <div class="sport-game-live-title">
+                        <h3>MLB 美国职业棒球</h3>
+                      </div>
+                      <div class="sport-game-live-versus">
+                        <span class="sport-game-live-team">洛杉矶道奇</span>
+                        <span class="sport-game-live-team">旧金山巨人</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="sport-game-list">
+                    <div class="sport-game-box">
+                      <span class="sport-game-live-date">8/14</span>
+                      <span class="sport-game-live-score">3:4</span>
+                    </div>
+                    <div class="sport-game-content">
+                      <div class="sport-game-live-title">
+                        <h3>MLB 美国职业棒球</h3>
+                      </div>
+                      <div class="sport-game-live-versus">
+                        <span class="sport-game-live-team">西雅图水手</span>
+                        <span class="sport-game-live-team">多伦多蓝鸟</span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="sport-banner">
+              <ul class="sport-slider" id="sportGameSlider">
+                <li>
+                  <a href="#0">
+                    <img src="image/lang/zh-cn/sport_banner_5Major_Leagues.png">
+                  </a>
+                </li>
+                <li>
+                  <a href="#0">
+                    <img src="image/lang/zh-cn/sport_banner_sbt.png">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- FOORTER -->
+    <div id="page-footer" class="footer">
+      <div class="footer-c">
+        <div class="footer-links">
+          <div class="links-box">
+            <div class="ttl">相关连结</div>
+            <a href="#0">关于BBIN</a>
+            <a href="#0">BBIN技术</a>
+            <a href="#0">协议与规则</a>
+            <a href="#0">合作伙伴</a>
+            <a href="#0">寰宇浏览器</a>
+          </div>
+          <div class="links-box">
+            <div class="ttl">需要帮助吗？</div>
+            <a href="contact.html">联络我们</a>
+            <a href="#0">常见问题</a>
+            <a href="#0">存/取款帮助</a>
+            <a href="#0">下载区</a>
+            <a href="#0">诺顿分级-安全网站</a>
+          </div>
+        </div>
+        <div class="footer-pay">
+          <ul>
+            <li>
+              <a href="#0">
+                <figure>
+                  <img src="image/footer_logo_weixin.png">
+                  <figcaption>微信支付</figcaption>
+                </figure>
+              </a>
+            </li>
+            <li>
+              <a href="#0">
+                <figure>
+                  <img src="image/footer_logo_alipay.png">
+                  <figcaption>支付宝</figcaption>
+                </figure>
+              </a>
+            </li>
+            <li>
+              <a href="#0">
+                <figure>
+                  <img src="image/footer_logo_mobile.png">
+                  <figcaption>手机支付</figcaption>
+                </figure>
+              </a>
+            </li>
+            <li>
+              <a href="#0">
+                <figure>
+                  <img src="image/footer_logo_neteller.png">
+                  <figcaption>NETELLER</figcaption>
+                </figure>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-line"></div>
+      <div class="footer-infor">
+        <div class="footer-copyright">
+          <p class="copyright">
+            2016 Copyright ©
+            <a href="">BBIN</a>
+            Reserved.
+          </p>
+          <p class="warn">如遇网页无法显示或出现错误，推荐其用户微软升级至IE10以上版本或下载其他浏览器享受更好的浏览品质。</p>
+        </div>
+        <div class="footer-glc">
+          <img src="image/logo_glc.png">
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!--會員登入視窗-->
+  <div id="login-wrap" style="display:none;">
+    <div class="login-wrap">
+        <div class="login-main">
+        <ul>
+          <li><input type="text" placeholder="帐号"></li>
+          <li><input type="text" placeholder="密码"></li>
+          <li>
+            <input type="text" placeholder="验证码">
+            <figure><img src="image/not-use/code2.png"></figure>
+          </li>
+        </ul>
+        <a href="#0" class="login-forget">忘记密码？</a>
+        <div class="login-button">
+          <button class="login" onclick="location.href='index-login.html'">登入</button>
+          <button class="register">注册</button>
+        </div>
+        </div>
+      </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/jquery-2.2.3.js"><\/script>')</script>
+  <script src="js/nicescroll.js"></script>
+  <script src="js/mob-menu.js"></script>
+  <script src="js/venobox.js"></script>
+  <script src="js/slider-sport.js"></script>
+  <script src="js/dialog.js"></script>
+  <script src="js/jquery.newsTicker.js"></script>
+  <script src="js/sport.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>
